@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Wikipedia visualization</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="assets/item.min.css">
+
+<script src="assets/jquery.js"></script>
+  
+<script src="assets/semantic.min.js"></script>
+<script>
+$(function() {
+	$('.more').hide()
+
+	$('.ui.items > .item').mouseenter(function() {
+		$('.image', this).fadeTo('fast', 0.8)
+		$('.description', this).hide()
+		$('.more', this).show()
+	}).mouseleave(function() {
+		$('.image', this).fadeTo('fast', 1.0)
+		$('.description', this).show()
+		$('.more', this).hide()
+	})
+})
+</script>
+<style>
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 2.5em;
+}
+.ui.items>.row>.item, .ui.items>.item { 
+	width: 500px;
+}
+a {
+	color: #D95C5C;
+	text-decoration: underline;
+}
+a:hover {
+	background-color: #FFFFCC;
+}
+.more li {
+	padding-bottom: 0.5em;
+	margin: 0;
+}
+.more ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a.label {
+	text-decoration: none;
+}
+.description {
+	padding: 0.5em;
+}
+</style>
+
+</head>
+
+<body class="item">
+<div class="main container">
+	
+	<h1 class="ui header">Wikipedia visualizations
+		<div class="sub header">A collection of visualization projects built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>.</div>
+	</h1>
+	<div class="ui clearing divider"></div>
+	<div class="ui items">
+		<div class="item" >
+			<div class="image">
+				<a class="like ui corner label" href="http://notabilia.net/" >
+					<i class="mail forward icon"></i>
+				</a>
+				<img src="viz/notabilia.png">
+			</div>
+			<div class="content">
+				<div class="name">Notabilia</div>
+				<p class="description">"We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. " </p>
+				<div class="more description">
+					<ul>
+						<li>By Dario Taraborelli, Giovanni Luca Ciampaglia, and Moritz Stefaner.</li>
+						<li><a href="http://notabilia.net/">http://notabilia.net/</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="image">
+				<a class="like ui corner label" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">
+					<i class="mail forward icon"></i>
+				</a>
+				<img src="viz/geo-topic-map.png">
+			</div>
+			<div class="content">
+				<div class="name">A Map of the Geographic Structure of Wikipedia Topics </div>
+				<p class="description">"Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders."</p>
+				<div class="more description">
+					<ul>
+						<li>By Olivier H. Beauchesne.</li>
+						<li><a href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">http://olihb.com/</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="image">
+				<a class="like ui corner label" href="http://www.panoramap.org/">
+					<i class="mail forward icon"></i>
+				</a>
+				<img src="viz/wlm-map.png">
+			</div>
+			<div class="content">
+				<div class="name">Map of Wiki Loves Monuments </div>
+				<p class="description">"Elle permet d'explorer les monuments historiques du monde entier."</p>
+
+				<div class="more description">
+					<ul>
+						<li>By <a href="http://bzg.fr/">bzg</a>.</li>
+						<li><a href="http://www.panoramap.org/">http://www.panoramap.org/</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui clearing"></div>
+	
+	<h2 class="ui header">See also</h2>
+	<div class="ui clearing divider"></div>
+	<ul>
+		<li>Erik Zachte's <a href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia Visualizations</a></li>
+		<li>My <a href="https://pinboard.in/u:slaporte/t:wikipedia/">Wikipedia pinboard links</a></li>
+	</ul>
+	</div>
+</div>
+</body>
+</html>

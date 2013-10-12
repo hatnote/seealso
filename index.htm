@@ -17,11 +17,11 @@ $(function() {
 	$('.more').hide()
 
 	$('.ui.items > .item').mouseenter(function() {
-		$('.image img', this).slideUp('fast')
+		$('.image', this).animate(500).addClass('smaller');
 		$('.description', this).hide()
 		$('.more', this).show()
 	}).mouseleave(function() {
-		$('.image img', this).slideDown('fast')
+		$('.image', this).removeClass('smaller');
 		$('.description', this).show()
 		$('.more', this).hide()
 	})
@@ -38,6 +38,10 @@ body {
 .ui.items .item:hover { 
 	cursor:default;
 }
+.ui.items .item>.smaller {
+	height: 75px;
+	overflow:hidden;
+}
 a {
 	color: #D95C5C;
 	text-decoration: underline;
@@ -53,6 +57,9 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+a.name {
+	text-decoration: none;
 }
 a.label {
 	text-decoration: none;
@@ -80,7 +87,7 @@ a.label {
 				<img src="viz/notabilia.png">
 			</div>
 			<div class="content">
-				<div class="name">Notabilia</div>
+				<a class="name" href="https://meta.wikimedia.org/wiki/Research:Data">Notabilia</a>
 				<p class="description">"We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. " </p>
 				<div class="more description">
 					<ul>
@@ -98,7 +105,7 @@ a.label {
 				<img src="viz/geo-topic-map.png">
 			</div>
 			<div class="content">
-				<div class="name">A Map of the Geographic Structure of Wikipedia Topics </div>
+				<a class="name" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">A Map of the Geographic Structure of Wikipedia Topics </a>
 				<p class="description">"Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders."</p>
 				<div class="more description">
 					<ul>
@@ -116,7 +123,7 @@ a.label {
 				<img src="viz/wlm-map.png">
 			</div>
 			<div class="content">
-				<div class="name">Map of Wiki Loves Monuments </div>
+				<a class="name" href="http://www.panoramap.org/">Map of Wiki Loves Monuments </a>
 				<p class="description">"Elle permet d'explorer les monuments historiques du monde entier."</p>
 
 				<div class="more description">
@@ -136,7 +143,7 @@ a.label {
 				<img src="viz/gender.png">
 			</div>
 			<div class="content">
-				<div class="name">Wikipedia Gender</div>
+				<a class="name" href="http://moebio.com/research/wikipediagender/">Wikipedia Gender</a>
 				<p class="description">"Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content. "</p>
 
 				<div class="more description">
@@ -157,7 +164,7 @@ a.label {
 				<img src="viz/wikistream.png">
 			</div>
 			<div class="content">
-				<div class="name">wikistream</div>
+				<a class="name" href="http://wikistream.wmflabs.org/">wikistream</a>
 				<p class="description">"Wikistream is a Node.js webapp for helping visualize current editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit in the wikimedia IRC chat rooms (where updates are published), and makes them available on the Web in realtime. "</p>
 
 				<div class="more description">

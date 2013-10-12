@@ -17,11 +17,11 @@ $(function() {
 	$('.more').hide()
 
 	$('.ui.items > .item').mouseenter(function() {
-		$('.image', this).fadeTo('fast', 0.8)
+		$('.image img', this).slideUp('fast')
 		$('.description', this).hide()
 		$('.more', this).show()
 	}).mouseleave(function() {
-		$('.image', this).fadeTo('fast', 1.0)
+		$('.image img', this).slideDown('fast')
 		$('.description', this).show()
 		$('.more', this).hide()
 	})
@@ -33,7 +33,10 @@ body {
 	margin: 2.5em;
 }
 .ui.items>.row>.item, .ui.items>.item { 
-	width: 500px;
+	width: 600px;
+}
+.ui.items .item:hover { 
+	cursor:default;
 }
 a {
 	color: #D95C5C;
@@ -124,6 +127,28 @@ a.label {
 				</div>
 			</div>
 		</div>
+		<div  class="item">
+			
+			<div class="image">
+				<a class="like ui corner label" href="http://moebio.com/research/wikipediagender/">
+					<i class="mail forward icon"></i>
+				</a>
+				<img src="viz/gender.png">
+			</div>
+			<div class="content">
+				<div class="name">Wikipedia Gender</div>
+				<p class="description">"Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content. "</p>
+
+				<div class="more description">
+					<ul>
+						<li>By <a href="https://twitter.com/moebio">Santiago Ortiz</a>.</li>
+						<li><a href="http://moebio.com/research/wikipediagender/">http://moebio.com/research/wikipediagender/</a>.</li></li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+		</a>
 	</div>
 	<div class="ui clearing"></div>
 	

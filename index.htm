@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Wikipedia visualization</title>
+<title></title>
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -16,31 +16,58 @@
 $(function() {
 	$('.more').hide()
 
-	$('.ui.items > .item').mouseenter(function() {
-		$('.image', this).animate(500).addClass('smaller');
-		$('.description', this).hide()
-		$('.more', this).show()
-	}).mouseleave(function() {
-		$('.image', this).removeClass('smaller');
-		$('.description', this).show()
-		$('.more', this).hide()
+	$('.ui.items > .item').click(function() {
+		if ($('.image', this).hasClass('smaller')) {
+			$('.image', this).removeClass('smaller');
+			$('.description', this).show()
+			$('.more', this).hide()
+		} else {
+			$('.image', this).addClass('smaller');
+			$('.description', this).hide()
+			$('.more', this).show()
+		}
 	})
 })
 </script>
 <style>
-body {
+body.items {
 	font-family: Helvetica, sans-serif;
-	margin: 2.5em;
+	font-size: 0.85em;
+	margin:0;
 }
 .ui.items>.row>.item, .ui.items>.item { 
-	width: 450px;
+	width: 360px;
+	max-height: 375px;
 }
 .ui.items .item:hover { 
-	cursor:default;
+	<!-- cursor:default; -->
+
+}
+.ui.items .item>.image {
+	height: 170px;
+	overflow:hidden;
+	transition: height 0.8s;
+}
+.ui.items .item>.image>img {
+	width: 150%;
+	left: -30%;
+}
+.ui.items .item>.content>.name {
+	max-width: 280px;
 }
 .ui.items .item>.smaller {
-	height: 75px;
+	height: 120px;
 	overflow:hidden;
+}
+.ui.header {
+	margin: 0;
+}
+.ui.divider {
+	margin: 0;
+}
+.main {
+	margin: 0.5em;
+	margin-top: 3em;
 }
 a {
 	color: #3B579D;
@@ -48,6 +75,12 @@ a {
 }
 a:hover {
 	background-color: #FFFFCC;
+}
+.head {
+	background: #f8f8f8;
+	margin: 0;
+	padding: 1em;
+	border-bottom: 1px solid #d8e6ec;
 }
 .more li {
 	padding-bottom: 0.5em;
@@ -71,140 +104,212 @@ a.label {
 
 </head>
 
-<body class="item">
-<div class="main container">
-	
-	<h1 class="ui header">Wikipedia visualizations
-		<div class="sub header">A collection of visualization projects built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>.</div>
-	</h1>
-	<div class="ui clearing divider"></div>
-	<div class="ui items">
-		<div class="item" >
-			<div class="image">
-				<a class="red active ui corner label" href="http://notabilia.net/" >
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/notabilia.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://notabilia.net/">Notabilia</a>
-				<p class="description">"We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. " </p>
-				<div class="more description">
-					<ul>
-						<li>By Dario Taraborelli, Giovanni Luca Ciampaglia, and Moritz Stefaner.</li>
-						<li><a href="http://notabilia.net/">http://notabilia.net/</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="image">
-				<a class="red ui corner label" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/geo-topic-map.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">A Map of the Geographic Structure of Wikipedia Topics </a>
-				<p class="description">"Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders."</p>
-				<div class="more description">
-					<ul>
-						<li>By Olivier H. Beauchesne.</li>
-						<li><a href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">http://olihb.com/</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<div class="image">
-				<a class="red ui corner label" href="http://www.panoramap.org/">
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/wlm-map.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://www.panoramap.org/">Map of Wiki Loves Monuments </a>
-				<p class="description">"Elle permet d'explorer les monuments historiques du monde entier."</p>
-
-				<div class="more description">
-					<ul>
-						<li>By <a href="http://bzg.fr/">bzg</a>.</li>
-						<li><a href="http://www.panoramap.org/">http://www.panoramap.org/</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div  class="item">
-			
-			<div class="image">
-				<a class="red ui corner label" href="http://moebio.com/research/wikipediagender/">
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/gender.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://moebio.com/research/wikipediagender/">Wikipedia Gender</a>
-				<p class="description">"Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content. "</p>
-
-				<div class="more description">
-					<ul>
-						<li>By <a href="https://twitter.com/moebio">Santiago Ortiz</a>.</li>
-						<li><a href="http://moebio.com/research/wikipediagender/">http://moebio.com/research/wikipediagender/</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		</div>
-		<div  class="item">
-			<div class="image">
-				<a class="red ui corner label" href="http://wikistream.wmflabs.org/">
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/wikistream.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://wikistream.wmflabs.org/">wikistream</a>
-				<p class="description">"Wikistream is a Node.js webapp for helping visualize current editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit in the wikimedia IRC chat rooms (where updates are published), and makes them available on the Web in realtime. "</p>
-
-				<div class="more description">
-					<ul>
-						<li>By <a href="https://twitter.com/edsu">Ed Summers</a>, <a href="https://twitter.com/mrdys">Sean Hannan</a>, <a href="https://twitter.com/notafish">Delphine Ménard</a>.</li>
-						<li>Source: <a href="https://github.com/edsu/wikistream">https://github.com/edsu/wikistream</a></li>
-						<li><a href="http://wikistream.wmflabs.org/">http://wikistream.wmflabs.org/</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		</div>
-		<div  class="item">
-			<div class="image">
-				<a class="red ui corner label" href="http://sepans.com/wikistalker/">
-					<i class="mail forward icon"></i>
-				</a>
-				<img src="viz/wikistalker.png">
-			</div>
-			<div class="content">
-				<a class="name" href="http://sepans.com/wikistalker/">Wikistalker</a>
-				<p class="description">"Wikistalker, inspired by ‘Web Stalker‘, is a way of understanding a concept by only seeing the visualization of the meta-structure of its Wikipedia article."</p>
-
-				<div class="more description">
-					<ul>
-						<li>By <a href="http://sepans.com/">sepans</a>, <a href="http://raschin.com/">raschin</a>.</li>
-						<li><a href="http://sepans.com/wikistalker/">http://sepans.com/wikistalker/</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		</div>
+<body class="items">
+	<div class="head">
+		<h1 class="ui header">See also: Wikipedia visualizations
+			<div class="sub header">A collection of visualization projects built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>.
+</div>
+		</h1>
 	</div>
-	<div class="ui clearing"></div>
-	
-	<h2 class="ui header">See also</h2>
-	<div class="ui clearing divider"></div>
-	<ul>
-		<li>Erik Zachte's <a href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia Visualizations</a></li>
-		<li>My <a href="https://pinboard.in/u:slaporte/t:wikipedia/">Wikipedia pinboard links</a></li>
-	</ul>
+	<div class="main container">
+		<div class="ui items">
+		<!-- items -->
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://notabilia.net/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/notabilia.png">
+				</div>
+				<div class="content">
+					<div class="meta">2011</div>
+					<a class="name" href="http://notabilia.net/" target="_blank">Notabilia</a>
+					<p class="description">"We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. " 
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: Dario Taraborelli, Giovanni Luca Ciampaglia, and Moritz Stefaner 
+
+							</li>
+							
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://notabilia.net/">http://notabilia.net/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/geo-topic-map.png">
+				</div>
+				<div class="content">
+					<div class="meta">2013</div>
+					<a class="name" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">A Map of the Geographic Structure of Wikipedia Topics</a>
+					<p class="description">"Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders." 
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: Olivier H. Beauchesne
+							</li>
+							
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/">http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.panoramap.org/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wlm-map.png">
+				</div>
+				<div class="content">
+					<div class="meta">2013</div>
+					<a class="name" href="http://www.panoramap.org/" target="_blank">Map of Wiki Loves Monuments</a>
+					<p class="description">"Elle permet d'explorer les monuments historiques du monde entier."
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://bzg.fr/">bzg</a>
+							</li>
+							
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://www.panoramap.org/">http://www.panoramap.org/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://wikistream.wmflabs.org/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wikistream.png">
+				</div>
+				<div class="content">
+					<div class="meta">2012</div>
+					<a class="name" href="http://wikistream.wmflabs.org/" target="_blank">wikistream</a>
+					<p class="description">"Wikistream is a Node.js webapp for helping visualize current editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit in the wikimedia IRC chat rooms (where updates are published), and makes them available on the Web in realtime." 
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/edsu">Ed Summers</a>, <a href="https://twitter.com/mrdys">Sean Hannan</a>, <a href="https://twitter.com/notafish">Delphine Ménard</a> 
+
+							</li>
+							
+							<li>
+								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/wikistream">available on github</a>. 
+
+							</li>
+							
+							
+							<li>
+								<i class="circular settings green icon"></i><strong>Data</strong>: Wikimedia IRC recent changes feed
+							</li>
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://wikistream.wmflabs.org/">http://wikistream.wmflabs.org/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://moebio.com/research/wikipediagender/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/gender.png">
+				</div>
+				<div class="content">
+					<div class="meta">2011</div>
+					<a class="name" href="http://moebio.com/research/wikipediagender/" target="_blank">Wikipedia Gender</a>
+					<p class="description">"Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content." 
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/moebio">Santiago Ortiz</a>
+							</li>
+							
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://moebio.com/research/wikipediagender/">http://moebio.com/research/wikipediagender/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://sepans.com/wikistalker/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wikistalker.png">
+				</div>
+				<div class="content">
+					<div class="meta">2013</div>
+					<a class="name" href="http://sepans.com/wikistalker/" target="_blank">Wikistalker</a>
+					<p class="description">"Wikistalker, inspired by ‘Web Stalker‘, is a way of understanding a concept by only seeing the visualization of the  meta-structure of its Wikipedia article."
+ </p>
+					<div class="more description">
+						
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://sepans.com/">sepans</a>, <a href="http://raschin.com/">raschin</a> 
+
+							</li>
+							
+							
+							<li>
+								<i class="circular external url icon"></i><a href="http://sepans.com/wikistalker/">http://sepans.com/wikistalker/</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<!-- other sections -->
+		
+		<div class="ui clearing"></div>
+		<h2 class="ui header">About</h2>
+		<div class="ui clearing divider"></div>
+			<p>This is a  collection of our favorite projects built on open data from Wikipedia and other Wikimedia projects. Source code and more details <a href="http://github.com/hatnote">available on Github</a>.</p> <p>If you know other cool Wikipedia-based projects, please <a href="http://blog.hatnote.com/ask">send it me a link</a>.</p>
+
+		
+		<div class="ui clearing"></div>
+		<h2 class="ui header">Further reading</h2>
+		<div class="ui clearing divider"></div>
+			<ul> <li>Erik Zachte's <a href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia Visualizations</a>.</li> <li>A set of <a href="https://pinboard.in/u:slaporte/t:wikipedia/">Wikipedia links</a>.</li> <li><a href="http://c2.com/cgi/wiki?VisualizeTheWiki">Visualize The Wiki</a> on c2.</li> </ul>
+
+		
 	</div>
 </div>
 </body>

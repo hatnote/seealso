@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>{title}</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="assets/item.min.css">
+
+<script src="assets/jquery.js"></script>
+  
+<script src="assets/semantic.min.js"></script>
+<script>
+$(function() {
+	$('.more').hide()
+
+	$('.ui.items > .item').click(function() {
+		if ($('.image', this).hasClass('smaller')) {
+			$('.image', this).removeClass('smaller');
+			$('.description', this).show()
+			$('.more', this).hide()
+		} else {
+			$('.image', this).addClass('smaller');
+			$('.description', this).hide()
+			$('.more', this).show()
+		}
+	})
+})
+</script>
+<style>
+body.items {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.85em;
+	margin:0;
+}
+.ui.items>.row>.item, .ui.items>.item { 
+	width: 360px;
+	max-height: 375px;
+}
+.ui.items .item:hover { 
+	<!-- cursor:default; -->
+
+}
+.ui.items .item>.image {
+	height: 170px;
+	overflow:hidden;
+	transition: height 0.8s;
+}
+.ui.items .item>.image>img {
+	width: 150%;
+	left: -30%;
+}
+.ui.items .item>.content>.name {
+	max-width: 280px;
+}
+.ui.items .item>.smaller {
+	height: 120px;
+	overflow:hidden;
+}
+.ui.header {
+	margin: 0;
+}
+.ui.divider {
+	margin: 0;
+}
+.main {
+	margin: 0.5em;
+	margin-top: 3em;
+}
+a {
+	color: #3B579D;
+	text-decoration: underline;
+}
+a:hover {
+	background-color: #FFFFCC;
+}
+.head {
+	background: #f8f8f8;
+	margin: 0;
+	padding: 1em;
+	border-bottom: 1px solid #d8e6ec;
+}
+.more li {
+	padding-bottom: 0.5em;
+	margin: 0;
+}
+.more ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a.name {
+	text-decoration: none;
+}
+a.label {
+	text-decoration: none;
+}
+.description {
+	padding: 0.5em;
+}
+</style>
+
+</head>
+
+<body class="items">
+	<div class="head">
+		<h1 class="ui header">{page_title}
+			<div class="sub header">{page_subtitle|s}</div>
+		</h1>
+	</div>
+	<div class="main container">
+		<div class="ui items">
+		<!-- items -->
+		{#visualizations}
+			<div class="item" >
+				<div class="image">
+					<a class="red active ui corner label" href="{url}" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="{image}">
+				</div>
+				<div class="content">
+					<div class="meta">{year}</div>
+					<a class="name" href="{url}" target="_blank">{title}</a>
+					<p class="description">{description|s} </p>
+					<div class="more description">
+						{?more_description}
+						<p>{more_description}</p>
+						{/more_description}
+						<ul>
+							<li>
+								<i class="circular users blue icon"></i><strong>By</strong>: {authors|s}
+							</li>
+							{?code}
+							<li>
+								<i class="circular code red icon"></i><strong>Code</strong>: {code|s}
+							</li>
+							{/code}
+							{?data}
+							<li>
+								<i class="circular settings green icon"></i><strong>Data</strong>: {data|s}
+							</li>
+							{/data}
+							<li>
+								<i class="circular external url icon"></i><a href="{url}">{url}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		{/visualizations}
+		</div>
+		<!-- other sections -->
+		{#sections}
+		<div class="ui clearing"></div>
+		<h2 class="ui header">{section_title}</h2>
+		<div class="ui clearing divider"></div>
+			{content|s}
+		{/sections}
+	</div>
+</div>
+</body>
+</html>

@@ -1,7 +1,7 @@
  # Collection of wikipedia visualizations
 ---
 page_title: "See also: Wikipedia visualizations"
-page_subtitle: > 
+page_subtitle: >
     A collection of visualization projects built on <a
     href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>.
 ---
@@ -12,14 +12,14 @@ year: 2011
 date_added: 2013-10-12
 url: http://notabilia.net/
 image: viz/notabilia.png
-description: > 
+description: >
     "We analyzed and visualized Article for Deletion (AfD)
     discussions in the English Wikipedia. The visualization above represents
     the 100 longest discussions that resulted in the deletion of the
-    respective article. " 
-authors: > 
+    respective article. "
+authors: >
     Dario Taraborelli, Giovanni Luca
-    Ciampaglia, and Moritz Stefaner 
+    Ciampaglia, and Moritz Stefaner
 code:
 ---
 title: A Map of the Geographic Structure of Wikipedia Topics
@@ -27,14 +27,14 @@ year: 2013
 date_added: 2013-10-12
 url: http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/
 image: viz/geo-topic-map.png
-description: > 
+description: >
     "Since geography is never far from history, a lot of maps show
     the colonial past of many countries. As ethnic groups don’t always fall
     inside political borders, several maps reveal the presence of multiple
     ethnic or cultural groups within a country or of groups stretching across
-    borders." 
+    borders."
 authors: Olivier H. Beauchesne
-code: 
+code:
 ---
 title: Map of Wiki Loves Monuments
 year: 2013
@@ -44,24 +44,24 @@ image: viz/wlm-map.png
 description: >
     "Elle permet d'explorer les monuments historiques du monde entier."
 authors: <a href="http://bzg.fr/">bzg</a>
-code: 
+code:
 ---
 title: wikistream
 year: 2012
 date_added: 2013-10-12
 url: http://wikistream.wmflabs.org/
 image: viz/wikistream.png
-description: > 
+description: >
     "Wikistream is a Node.js webapp for helping visualize current
     editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit
     in the wikimedia IRC chat rooms (where updates are published), and makes
-    them available on the Web in realtime." 
-authors: > 
+    them available on the Web in realtime."
+authors: >
     <a href="https://twitter.com/edsu">Ed Summers</a>, <a
     href="https://twitter.com/mrdys">Sean Hannan</a>, <a
-    href="https://twitter.com/notafish">Delphine Ménard</a> 
-code: > 
-    <a href="https://github.com/edsu/wikistream">available on github</a>. 
+    href="https://twitter.com/notafish">Delphine Ménard</a>
+code: >
+    <a href="https://github.com/edsu/wikistream">available on github</a>.
 data: Wikimedia IRC recent changes feed
 ---
 title: Wikipedia Gender
@@ -69,11 +69,11 @@ year: 2011
 date_added: 2013-10-12
 url: http://moebio.com/research/wikipediagender/
 image: viz/gender.png
-description: > 
+description: >
     "Using the gender api that I discovered in this project, I
     wanted to see the relations between the proportion female/male editing and
-    article and its content." 
-authors: <a href="https://twitter.com/moebio">Santiago Ortiz</a> 
+    article and its content."
+authors: <a href="https://twitter.com/moebio">Santiago Ortiz</a>
 code:
 ---
 title: Wikistalker
@@ -81,27 +81,27 @@ year: 2013
 date_added: 2013-10-12
 url: http://sepans.com/wikistalker/
 image: viz/wikistalker.png
-description: > 
+description: >
     "Wikistalker, inspired by ‘Web Stalker‘, is a way of
-    understanding a concept by only seeing the visualization of the 
+    understanding a concept by only seeing the visualization of the
     meta-structure of its Wikipedia article."
-authors: > 
+authors: >
     <a href="http://sepans.com/">sepans</a>, <a
-    href="http://raschin.com/">raschin</a> 
+    href="http://raschin.com/">raschin</a>
 code:
 ---
  # other sections for the site
 ---
 section_title: About
-content: > 
+content: >
     <p>This is a  collection of our favorite projects built on open
     data from Wikipedia and other Wikimedia projects. Source code and more
     details <a href="http://github.com/hatnote">available on Github</a>.</p>
     <p>If you know other cool Wikipedia-based projects, please <a
-    href="http://blog.hatnote.com/ask">send it me a link</a>.</p>
+    href="http://blog.hatnote.com/ask">submit a link</a>.</p>
 ---
 section_title: Further reading
-content: > 
+content: >
     <ul> <li>Erik Zachte's <a
     href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia
     Visualizations</a>.</li> <li>A set of <a

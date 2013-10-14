@@ -1,9 +1,12 @@
-import argparse
+# -*- coding: utf-8 -*-
+
 import codecs
+import argparse
+
 import yaml
 import ashes
 
-DEFAULT_OUTPUT_NAME = 'index.htm'
+DEFAULT_OUTPUT_NAME = './static/index.htm'
 DEFAULT_YAML = 'content.yaml'
 DEFAULT_TEMPALTE_NAME = 'index.dust'
 

@@ -7,21 +7,40 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Wikipedia Worldview
+year: 2013
+date_added: 2013-10-16
+url: http://www.wikipediaworldview.net/
+image: viz/wikipedia_worldview.png
+description: >
+
+    "A while ago, Wikipedia introduced <a
+    href="http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Geographical_coordinates">georeferences</a>.
+    Georeferences are a way to annotate geographic landmarks, borders,
+    [and] cities within Wikipedia articles ... Wikipedia Worldview is
+    an app to project Wikipedia georeferences onto a 2D plane,
+    intended to analyze the language-based distribution."
+
+authors: >
+    <a href="http://de.linkedin.com/pub/simon-schulz/68/79a/6b">Simon Schulz</a>
+code:
+data: <a href="http://www.wikilocation.org/">WikiLocation</a>
+---
 title: ClusterBall
-year: 2007 
+year: 2007
 date_added: 2013-10-15
 url: http://www.chrisharrison.net/index.php/Visualizations/ClusterBall
 image: viz/clusterball.png
-description: > 
+description: >
     "The clustering component of this visualization is vital. The
     mere presence of information isn't all that interesting; there is no
     context or relevance to be gleaned. However, the structure of information
     is revealing about where fields intersect and diverge, and ultimately
-    about how humans organize information." 
+    about how humans organize information."
 authors: >
     <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>
-code: 
-data: 
+code:
+data:
 ---
 title: Notabilia
 year: 2011
@@ -94,7 +113,7 @@ description: >
     wanted to see the relations between the proportion female/male editing and
     article and its content."
 authors: <a href="https://twitter.com/moebio">Santiago Ortiz</a>
-code: 
+code:
 data: Wikipedia API
 ---
 title: Wikistalker
@@ -109,7 +128,7 @@ description: >
 authors: >
     <a href="http://sepans.com/">sepans</a>, <a
     href="http://raschin.com/">raschin</a>
-code: 
+code:
 data: <a href="http://wikipedia-miner.cms.waikato.ac.nz/">Wikipedia miner</a>
 ---
  # other sections for the site

@@ -102,6 +102,9 @@ a.label {
 .description {
 	padding: 0.5em;
 }
+.sections {
+	margin: 2em;
+}
 </style>
 
 </head>
@@ -146,7 +149,7 @@ a.label {
 							</li>
 							{/data}
 							<li>
-								<i class="circular external url icon"></i><a href="{url}">{url}</a>
+								<i class="circular external url icon"></i><a href="{url}" target="_blank">{title}</a>
 							</li>
 						</ul>
 					</div>
@@ -156,10 +159,13 @@ a.label {
 		</div>
 		<!-- other sections -->
 		{#sections}
-		<div class="ui clearing"></div>
-		<h2 class="ui header">{section_title}</h2>
-		<div class="ui clearing divider"></div>
-			{content|s}
+			<div class="sections">
+			<div class="ui clearing"></div>
+			<h2 class="ui header">{section_title}</h2>
+			<div class="ui clearing divider"></div>
+				{content|s}
+			</div>
+
 		{/sections}
 	</div>
 </div>

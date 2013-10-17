@@ -3,7 +3,7 @@
 page_title: "See, also"
 page_subtitle: >
     A collection of visualization projects built on <a
-    href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>.
+    href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 ---
  # Each visualization should include a title, url, image, and description
 ---
@@ -135,11 +135,14 @@ data: <a href="http://wikipedia-miner.cms.waikato.ac.nz/">Wikipedia miner</a>
 ---
 section_title: About
 content: >
-    <p>This is a  collection of our favorite projects built on open
-    data from Wikipedia and other Wikimedia projects. Source code and more
-    details <a href="http://github.com/hatnote">available on Github</a>.</p>
+
+    <p>This is a collection of <a href="//blog.hatnote.com">our</a>
+    favorite projects built on open data from Wikipedia and other
+    Wikimedia projects. Source code and more details <a
+    href="http://github.com/hatnote">available on Github</a>.</p>
     <p>If you know other cool Wikipedia-based projects, please <a
-    href="http://blog.hatnote.com/ask">submit a link</a>.</p>
+    href="//blog.hatnote.com/ask">submit a link</a>.</p>
+
 ---
 section_title: Further reading
 content: >

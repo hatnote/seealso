@@ -1,6 +1,6 @@
 # See, also
 
-This is a static site, showcasing some of our favorite Wikipedia visualizations, infographics, sonifications, charts, illustrations, or anything particularly cool built on  Wikipedia data. If you want to suggest a Wikipedia-related projects, please [contact us](http://blog.hatnote.com/ask) or [send a pull request](../../pulls).
+This is a static site, showcasing some of our favorite Wikipedia visualizations, infographics, sonifications, charts, illustrations, or anything particularly cool built on  Wikipedia data. If you want to suggest Wikipedia-related projects, please [contact us](http://blog.hatnote.com/ask) or [send a pull request](../../pulls).
 
 Available at [seealso.hatnote.com](http://seealso.hatnote.com/).
 

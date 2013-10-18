@@ -1,6 +1,6 @@
 # See, also
 
-This is a static site, showcasing some of our favorite Wikipedia visualizations, infographics, sonifications, charts, illustrations, or anything particularly cool built on  Wikipedia data. If you want to suggest a Wikipedia-related projects, please [contact us](http://blog.hatnote.com/ask) or [send a pull request](seealso/pulls).
+This is a static site, showcasing some of our favorite Wikipedia visualizations, infographics, sonifications, charts, illustrations, or anything particularly cool built on  Wikipedia data. If you want to suggest a Wikipedia-related projects, please [contact us](http://blog.hatnote.com/ask) or [send a pull request](../../pulls).
 
 ## Generating static HTML
 
@@ -10,7 +10,7 @@ To install the requirements:
 pip install -r requirements.txt
 ```
 
-You can build the site from a content file (see [content.yaml](../blob/master/content.yaml)) and a template (see [templates/index.dust](../blob/master/templates/index.dust)) using [generate.py](../blob/master/generate.py):
+You can build the site from a content file (see [content.yaml](../master/content.yaml)) and a template (see [templates/index.dust](../master/templates/index.dust)) using [generate.py](../master/generate.py):
 
 ```sh
 python generate.py

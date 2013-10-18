@@ -7,6 +7,25 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Flow Circle
+year: 2013
+date_added: 2013-10-18
+url: http://flowcircle.herokuapp.com/
+image: viz/flow-circle.png
+description: >
+
+    "First, this study introduces the Flow Circle, which is a new exploratory
+    data analysis tool devised to solve such problems of History Flow.
+    Second, this tool is used to actually visualize the Wiki revision history
+    regarding gun politics in order to understand and analyze the flow of the
+    revision history and the relationship and conflict structures between the
+    authors based on the results of the MDS analysis."
+
+authors: >
+    Jaeho Lee, Dongjin Kim, Jaejune Park, Kyungwon Lee
+code:
+data: 
+---
 title: Wikipedia Worldview
 year: 2013
 date_added: 2013-10-16
@@ -138,8 +157,8 @@ content: >
 
     <p>This is a collection of <a href="//blog.hatnote.com">our</a>
     favorite projects built on open data from Wikipedia and other
-    Wikimedia projects. Source code and more details <a
-    href="http://github.com/hatnote">available on Github</a>.</p>
+    Wikimedia projects. Source code and more details about this page are <a
+    href="https://github.com/hatnote/seealso">available on Github</a>.</p>
     <p>If you know other cool Wikipedia-based projects, please <a
     href="//blog.hatnote.com/ask">submit a link</a>.</p>
 

@@ -2,6 +2,8 @@
 
 This is a static site, showcasing some of our favorite Wikipedia visualizations, infographics, sonifications, charts, illustrations, or anything particularly cool built on  Wikipedia data. If you want to suggest a Wikipedia-related projects, please [contact us](http://blog.hatnote.com/ask) or [send a pull request](../../pulls).
 
+Available at [seealso.hatnote.com](http://seealso.hatnote.com/).
+
 ## Generating static HTML
 
 To install the requirements:
@@ -16,7 +18,7 @@ You can build the site from a content file (see [content.yaml](../master/content
 python generate.py
 ```
 
-Optionally, you can specify an input content (YAML) file or output HTML file:
+Optionally, you can specify an input content file (YAML) or output file (HTML):
 
 ```sh
 python generate.py --content content.yaml --output ./static/index.html

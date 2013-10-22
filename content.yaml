@@ -7,6 +7,27 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Emergent Mosaic of Wikipedian Activity
+year: 2007
+date_added: 2013-10-22
+url: http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/
+image: viz/mosaic.png
+description: >
+
+    "In this case the nodes in the network are wikipedia articles and the
+    edges are the links between articles.  We then ... used an algorithm to lay
+    out all 650,000 nodes (wikipedia articles) that had at least one link in
+    such a way that similar articles are near one another.  These are the
+    yellow dots, which when viewed at low res give a yellow tint to the whole
+    picture."
+
+authors: >
+    <a href="http://about.bh2.net/">Bruce Herr</a>,
+    <a href="http://abeautifulwww.com/">Todd Holloway</a>, and
+    <a href="http://ella.slis.indiana.edu/~katy/">Katy Börner</a>
+code: 
+data: Wikipedia dumps
+---
 title: Flow Circle
 year: 2013
 date_added: 2013-10-18
@@ -24,7 +45,7 @@ description: >
 authors: >
     Jaeho Lee, Dongjin Kim, Jaejune Park, Kyungwon Lee
 code:
-data: 
+data: Wikipedia dumps
 ---
 title: Wikipedia Worldview
 year: 2013
@@ -51,15 +72,17 @@ date_added: 2013-10-15
 url: http://www.chrisharrison.net/index.php/Visualizations/ClusterBall
 image: viz/clusterball.png
 description: >
+
     "The clustering component of this visualization is vital. The
     mere presence of information isn't all that interesting; there is no
     context or relevance to be gleaned. However, the structure of information
     is revealing about where fields intersect and diverge, and ultimately
     about how humans organize information."
+
 authors: >
     <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>
 code:
-data:
+data: Wikipedia dumps
 ---
 title: Notabilia
 year: 2011
@@ -67,14 +90,17 @@ date_added: 2013-10-12
 url: http://notabilia.net/
 image: viz/notabilia.png
 description: >
+
     "We analyzed and visualized Article for Deletion (AfD)
     discussions in the English Wikipedia. The visualization above represents
     the 100 longest discussions that resulted in the deletion of the
     respective article. "
+
 authors: >
     <a href="https://twitter.com/readermeter">Dario Taraborelli</a>, Giovanni Luca
     Ciampaglia, and Moritz Stefaner
 code:
+data: 
 ---
 title: A Map of the Geographic Structure of Wikipedia Topics
 year: 2013
@@ -82,13 +108,16 @@ date_added: 2013-10-12
 url: http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/
 image: viz/geo-topic-map.png
 description: >
+
     "Since geography is never far from history, a lot of maps show
     the colonial past of many countries. As ethnic groups don’t always fall
     inside political borders, several maps reveal the presence of multiple
     ethnic or cultural groups within a country or of groups stretching across
     borders."
+
 authors: Olivier H. Beauchesne
 code:
+data: Wikipedia dumps
 ---
 title: Map of Wiki Loves Monuments
 year: 2013

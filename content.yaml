@@ -7,6 +7,24 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Art History on Wikipedia
+year: 2012
+date_added: 2013-10-22
+url: http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955
+image: viz/arthistory.png
+description: >
+
+    "I am a highly visual person. When I have to learn something new, I
+    usually first try to make a sketch of the structure of the knowledge that
+    I want (or have to ;-)) to study. This usually results in diagrams
+    outlining the material, giving it some structured form that makes it
+    easier for me to grasp. "
+
+authors: >
+    Doron Goldfarb, Dieter Merk, Max Arends, Josef Froschauer
+code: 
+data: <a href="http://dbpedia.org/About">DBpedia</a>
+---
 title: Emergent Mosaic of Wikipedian Activity
 year: 2007
 date_added: 2013-10-22

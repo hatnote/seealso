@@ -11,7 +11,7 @@ title: Art History on Wikipedia
 year: 2012
 date_added: 2013-10-22
 url: http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955
-image: viz/arthistory.png
+image: viz/arthistory_sm.png
 description: >
 
     "I am a highly visual person. When I have to learn something new, I
@@ -29,7 +29,7 @@ title: Emergent Mosaic of Wikipedian Activity
 year: 2007
 date_added: 2013-10-22
 url: http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/
-image: viz/mosaic.png
+image: viz/mosaic_sm.png
 description: >
 
     "In this case the nodes in the network are wikipedia articles and the
@@ -50,7 +50,7 @@ title: Flow Circle
 year: 2013
 date_added: 2013-10-18
 url: http://flowcircle.herokuapp.com/
-image: viz/flow-circle.png
+image: viz/flow-circle_sm.png
 description: >
 
     "First, this study introduces the Flow Circle, which is a new exploratory
@@ -69,7 +69,7 @@ title: Wikipedia Worldview
 year: 2013
 date_added: 2013-10-16
 url: http://www.wikipediaworldview.net/
-image: viz/wikipedia_worldview.png
+image: viz/wikipedia_worldview_sm.png
 description: >
 
     "A while ago, Wikipedia introduced <a
@@ -88,7 +88,7 @@ title: ClusterBall
 year: 2007
 date_added: 2013-10-15
 url: http://www.chrisharrison.net/index.php/Visualizations/ClusterBall
-image: viz/clusterball.png
+image: viz/clusterball_sm.png
 description: >
 
     "The clustering component of this visualization is vital. The
@@ -106,7 +106,7 @@ title: Notabilia
 year: 2011
 date_added: 2013-10-12
 url: http://notabilia.net/
-image: viz/notabilia.png
+image: viz/notabilia_sm.png
 description: >
 
     "We analyzed and visualized Article for Deletion (AfD)
@@ -124,7 +124,7 @@ title: A Map of the Geographic Structure of Wikipedia Topics
 year: 2013
 date_added: 2013-10-12
 url: http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/
-image: viz/geo-topic-map.png
+image: viz/geo-topic-map_sm.png
 description: >
 
     "Since geography is never far from history, a lot of maps show
@@ -141,7 +141,7 @@ title: Map of Wiki Loves Monuments
 year: 2013
 date_added: 2013-10-12
 url: http://www.panoramap.org/
-image: viz/wlm-map.png
+image: viz/wlm-map_sm.png
 description: >
     "Elle permet d'explorer les monuments historiques du monde entier."
 authors: <a href="http://bzg.fr/">bzg</a>
@@ -155,7 +155,7 @@ title: wikistream
 year: 2012
 date_added: 2013-10-12
 url: http://wikistream.wmflabs.org/
-image: viz/wikistream.png
+image: viz/wikistream_sm.png
 description: >
     "Wikistream is a Node.js webapp for helping visualize current
     editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit
@@ -173,7 +173,7 @@ title: Wikipedia Gender
 year: 2011
 date_added: 2013-10-12
 url: http://moebio.com/research/wikipediagender/
-image: viz/gender.png
+image: viz/gender_sm.png
 description: >
     "Using the gender api that I discovered in this project, I
     wanted to see the relations between the proportion female/male editing and
@@ -186,7 +186,7 @@ title: Wikistalker
 year: 2013
 date_added: 2013-10-12
 url: http://sepans.com/wikistalker/
-image: viz/wikistalker.png
+image: viz/wikistalker_sm.png
 description: >
     "Wikistalker, inspired by ‘Web Stalker‘, is a way of
     understanding a concept by only seeing the visualization of the

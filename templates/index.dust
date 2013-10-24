@@ -51,8 +51,7 @@ body.items {
 	transition: height 0.8s;
 }
 .ui.items .item>.image>img {
-	width: 150%;
-	left: -30%;
+	
 }
 .ui.items .item>.content>.name {
 	max-width: 280px;

@@ -7,6 +7,33 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: "Information Imbalance: Africa on Wikipedia"
+year: 2013
+date_added: 2013-10-28
+url: http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/
+image: viz/ii_africa_sm.png
+description: >-
+
+  "At the global scale (in an article that we currently have under
+  review), we found that the number of Wikipedia articles within (or
+  describing) a country can be explained to a large degree by just
+  three factors: (1) the size of its population, (2) the number of its
+  fixed broadband internet connections, and (3) the number of edits
+  committed to Wikipedia by its population."
+
+authors: >-
+  <a href="http://www.ralphstraumann.ch/">Ralph Straumann</a>,
+  <a href="http://www.oii.ox.ac.uk/people/?id=165">Mark Graham</a>,
+  <a href="http://www.oii.ox.ac.uk/people/?id=140">Bernie Hogan</a>,
+  <a href="http://www.linkedin.com/profile/view?id=36036869">Ahmed Medhat</a>
+
+code:
+data: >-
+  <a href="http://en.wikipedia.org/wiki/Wikipedia:Database_download">Wikipedia dumps</a>,
+  <a href="http://wikilocation.org/">Wikilocation</a>,
+  <a href="http://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Georeferenzierung/Hauptseite/Wikipedia-World/en">WikiProjekt Georeferenzierung</a>,
+  <a href="http://stats.wikimedia.org/wikimedia/squids/SquidReportsCountriesLanguagesVisitsEdits.htm">Traffic stats</a>
+---
 title: Art History on Wikipedia
 year: 2012
 date_added: 2013-10-22
@@ -22,7 +49,7 @@ description: >
 
 authors: >
     Doron Goldfarb, Dieter Merk, Max Arends, Josef Froschauer
-code: 
+code:
 data: <a href="http://dbpedia.org/About">DBpedia</a>
 ---
 title: Emergent Mosaic of Wikipedian Activity
@@ -43,7 +70,7 @@ authors: >
     <a href="http://about.bh2.net/">Bruce Herr</a>,
     <a href="http://abeautifulwww.com/">Todd Holloway</a>, and
     <a href="http://ella.slis.indiana.edu/~katy/">Katy Börner</a>
-code: 
+code:
 data: Wikipedia dumps
 ---
 title: Flow Circle
@@ -118,7 +145,7 @@ authors: >
     <a href="https://twitter.com/readermeter">Dario Taraborelli</a>, Giovanni Luca
     Ciampaglia, and Moritz Stefaner
 code:
-data: 
+data:
 ---
 title: A Map of the Geographic Structure of Wikipedia Topics
 year: 2013

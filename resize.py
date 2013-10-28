@@ -8,6 +8,7 @@ SM_WIDTH = 520
 WIDTH_OFFSET = 80
 WIDTH = 354
 
+
 def main(filename, out_name):
     if not out_name:
         out_name = filename[:-4] + '_sm.png'
@@ -16,6 +17,7 @@ def main(filename, out_name):
     crop_img = small_img.crop((WIDTH_OFFSET, 0, WIDTH_OFFSET + WIDTH, SM_HEIGHT))
     crop_img.save(out_name)
     print 'wrote', out_name
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

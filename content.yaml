@@ -7,6 +7,28 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Co-editing patterns on Wikipedia
+year: 2011
+date_added: 2013-11-16
+url: http://wikiproject.oii.ox.ac.uk/networks/index.php
+image: viz/co-editing_sm.png
+description: >-
+  
+  "These links indicate individuals who have co-edited many pages together on
+  Wikipedia. We use a custom weighting technique, and filter down to the core
+  editors (in every language except Egyptian Arabic and Swahili where we use
+  everyone). The fact that this core is so well connected indicates the
+  coherence of the Wikipedia community."
+
+authors: >-
+
+  <a href="http://www.zerogeography.net/search/label/Wikipedia">Mark
+  Graham</a>, Ahmed Medhat Mohammed, Bernie Hogan and Richard Farmbrough,
+  Oxford Internet Institute
+
+code: 
+data: Wikipedia dumps
+---
 title: "Information Imbalance: Africa on Wikipedia"
 year: 2013
 date_added: 2013-10-28

@@ -7,6 +7,21 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Wikimedia Community Visualization
+year: 2013
+date_added: 2013-12-15
+url: http://haithams.github.io/community_visualization/
+image: viz/community-interaction_sm.png
+description: >-
+
+  Community interaction on Wikipedia, based on user communication on
+  on talk pages. The graph is built with Gephi, showing 10,0000
+  connections between users.
+
+authors: Haitham Shammaa
+code: <a href="https://github.com/haithams/community_visualization">available on github</a>
+data: Wikimedia dumps
+---
 title: Co-editing patterns on Wikipedia
 year: 2011
 date_added: 2013-11-16

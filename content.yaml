@@ -7,6 +7,27 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Paris Review Interviews and Wikipedia
+year: 2014
+date_added: 2014-02-08
+url: http://edsu.github.io/parisreview/
+image: viz/paris-review_sm.png
+description: >-
+
+  "...I wanted to get a picture not only of what Wikipedia articles pointed at
+  the Paris Review, but also Paris Review interviews which were not referenced
+  in Wikipedia. So I wrote a little crawler that collected all the Paris Review
+  interviews, and then figured out which ones were pointed at by English
+  Wikipedia."
+
+authors: <a href="https://twitter.com/edsu">Ed Summers</a>
+code: <a href="https://github.com/edsu/parisreview">available on github</a>
+data: >- 
+    
+    <a href="http://dbpedia.org/About">DBpedia</a> - <a
+    href="http://inkdroid.org/journal/2014/02/02/paris-review-interviews-and-wikipedia/">more info</a>
+
+---
 title: WikiChanges
 year: 2008
 date_added: 2014-01-28

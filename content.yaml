@@ -7,6 +7,18 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Local Wikipedia Map
+year: 2014
+date_added: 2014-08-10
+url: http://lwmap.uni-koeln.de/
+image: viz/lwmap_sm.png
+description: >-
+
+    "The motivation of this page is to get a little more oversight of the facts and connections which are part of the Wikipedia. To get the birds eye view of Wikipedia we have to focus a part of of the whole we want to focus. This focus should describes a field of articles that interrelate."
+
+authors: Rasmus Krempel
+data: <a href="http://dbpedia.org/About">DBpedia</a>
+---
 title: Wikipedia globe
 year: 2014
 date_added: 2014-08-10

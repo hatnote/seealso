@@ -7,6 +7,21 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Wikipedia globe
+year: 2014
+date_added: 2014-08-10
+url: http://simia.net/wikiglobe/
+image: viz/wikipedia-globe_sm.png
+description: >-
+  
+    Using geocordinate data from Wikipedia articles, this interactive 3d globe illustrates the concentration of coverage in nine language editions of Wikipedia.
+
+authors: <a href="https://github.com/vrandezo">Denny Vrandečić</a>
+code: <a href="https://github.com/vrandezo/wikiglobe">available on github</a>
+data: >-
+    
+    <a href="https://www.wikidata.org">Wikidata</a>, <a href="http://dbpedia.org/About">DBpedia</a>
+---
 title: Paris Review Interviews and Wikipedia
 year: 2014
 date_added: 2014-02-08

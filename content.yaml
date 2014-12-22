@@ -7,6 +7,55 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: WikiGalaxy
+year: 2014
+date_added: 2014-12-21
+url: http://wiki.polyfra.me/
+image: viz/wikigalaxy_sm.png
+description: >-
+
+    Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot is a Wikipedia article, and their connections form constellations.
+
+authors: <a href="http://www.polyfra.me/">Owen Cornec</a>
+data: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+---
+title: Backstory
+year: 2014
+date_added: 2014-12-21
+url: http://projects.kraeutli.com/ica/
+image: viz/backstory_sm.png
+description: >-
+
+    "My hope is that Wikipedia stays around for a while so that we can look at 50 years of a topic so can really see from childhood on."
+
+authors: <a href="http://www.kraeutli.com/index.php/about/">Florian Kräutli</a>
+code: <a href="https://github.com/fkraeutli/beautifulData">available on Github</a>
+data: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+---
+title: Green Honey
+year: 2014
+date_added: 2014-12-21
+url: http://muyueh.com/greenhoney/
+image: viz/greenhoney_sm.png
+description: >-
+
+    "Language represents our view of the world, and knowing its limits helps us understand how our perception works."
+
+authors: <a href="https://twitter.com/muyueh">Muyueh Lee</a>
+data: Raw data
+---
+title: href + U.S. cities
+year: 2014
+date_added: 2014-12-21
+url: http://datalooksdope.com/href/
+image: viz/dld-wiki_sm.png
+description: >-
+
+    "Is there a correlation between the population of a place and the number of hyperlinks on a Wikipedia page?"
+
+authors: Max Einstein
+data: Raw pages
+---
 title: Local Wikipedia Map
 year: 2014
 date_added: 2014-08-10

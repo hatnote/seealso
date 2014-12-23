@@ -7,6 +7,18 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Global Language Network
+year: 2014
+date_added: 2014-12-21
+url: http://language.media.mit.edu/
+image: viz/language-mit_sm.png
+description: >-
+
+    "Here we use the structure of the networks connecting multilingual speakers and translated texts, as expressed in book translations, multiple language editions of Wikipedia, and Twitter, to provide a concept of language importance that goes beyond simple economic or demographic measures."
+
+authors: <a href="http://macro.media.mit.edu/">MIT Media Lab Macro Connections group</a> + more
+data: Raw Wikipedia data
+---
 title: WikiGalaxy
 year: 2014
 date_added: 2014-12-21

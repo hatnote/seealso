@@ -7,6 +7,18 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Gender in New York Times Editorial Obituaries 1987 - 2007
+year: 2015
+date_added: 2015-02-16
+url: http://passingon.natematias.com/
+image: viz/passingon_sm.png
+description: >-
+
+    "Wikipedia is an influential mirror on society, a means through which we understand our world. Wikipedia also has gaps that we can all work to fill. How are women faring?"
+
+authors: <a href="https://twitter.com/natematias">Nathan Matias</a> and <a href="http://web.mit.edu/sldiehl/www/">Sophie Diehl</a>
+data: Raw Wikipedia data
+---
 title: Global Language Network
 year: 2014
 date_added: 2014-12-21

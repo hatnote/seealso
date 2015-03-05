@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import Image
+from PIL import Image
 import argparse
 
 SM_HEIGHT = 174

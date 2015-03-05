@@ -7,6 +7,19 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Infobaleen Wikipedia Map
+year: 2014
+date_added: 2015-03-04
+url: http://www.infobaleen.com/wiki
+code: <a href="https://bitbucket.org/mapequation/infomap">InfoMap</a> + proprietary
+image: viz/infobaleen_sm.png
+description: >-
+
+    "Each box is a <b>cluster of related Wikipedia pages</b>... like the continent of a world map."
+
+authors: <a href="https://sites.google.com/site/andrealancichinetti/">Andrea Lancichinetti</a> & <a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a>
+data: Raw Wikipedia data
+---
 title: Gender in New York Times Editorial Obituaries 1987 - 2007
 year: 2015
 date_added: 2015-02-16
@@ -98,13 +111,13 @@ date_added: 2014-08-10
 url: http://simia.net/wikiglobe/
 image: viz/wikipedia-globe_sm.png
 description: >-
-  
+
     Using geocordinate data from Wikipedia articles, this interactive 3d globe illustrates the concentration of coverage in nine language editions of Wikipedia.
 
 authors: <a href="https://github.com/vrandezo">Denny Vrandečić</a>
 code: <a href="https://github.com/vrandezo/wikiglobe">available on github</a>
 data: >-
-    
+
     <a href="https://www.wikidata.org">Wikidata</a>, <a href="http://dbpedia.org/About">DBpedia</a>
 ---
 title: Paris Review Interviews and Wikipedia
@@ -122,8 +135,8 @@ description: >-
 
 authors: <a href="https://twitter.com/edsu">Ed Summers</a>
 code: <a href="https://github.com/edsu/parisreview">available on github</a>
-data: >- 
-    
+data: >-
+
     <a href="http://dbpedia.org/About">DBpedia</a> - <a
     href="http://inkdroid.org/journal/2014/02/02/paris-review-interviews-and-wikipedia/">more info</a>
 

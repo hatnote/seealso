@@ -7,6 +7,32 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: whoCOLOR
+year: 2015
+date_added: 2015-07-06
+url: http://people.aifb.kit.edu/ffl//whovisual/
+code: <a href="https://github.com/jurkan/whoCOLOR">on github</a>
+image: viz/whocolor_sm.png
+description: >-
+
+    "creates an on-demand color-markup of the original authors of the text of any article on the (english) wikipedia."
+
+authors: Felix Stadthaus
+data: Wikipedia
+---
+title: ViziData
+year: 2015
+date_added: 2015-07-06
+url: http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/
+code: <a href="https://github.com/gordelwig/ViziData">on github</a>
+image: viz/vizidata_sm.png
+description: >-
+
+    "This is a visualization prototype for large datasets of spacio-temporal data from Wikidata.  Events for a selected time-interval are shown as aggregate points in a map like fashion."
+
+authors: <a href="https://github.com/gordelwig">Georg Wild</a>
+data: <a href="https://github.com/gordelwig/ViziDataPreprocessor">processed</a> from Wikidata
+---
 title: Infobaleen Wikipedia Map
 year: 2014
 date_added: 2015-03-04

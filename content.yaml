@@ -1,11 +1,91 @@
  # Collection of wikipedia visualizations
 ---
-page_title: "See, also"
+page_title: "See also"
 page_subtitle: >
-    A collection of visualization projects built on <a
+    A collection of our favorite visualizations built on <a
     href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 ---
  # Each visualization should include a title, url, image, and description
+---
+title: "Histography"
+year: 2015
+date_added: 2015-11-14
+url: http://histography.io/
+image: viz/histography_sm.png
+description: >-
+
+    "Histography is interactive timeline that spans across 14 billion years of history, from the Big Bang to 2015. The site draws historical events from Wikipedia and self-updates daily with new recorded events."
+
+authors:  "<a href='http://cargocollective.com/matanstauber'>Matan Stauber</a>"
+---
+title: "Historic London as Seen from Wikipedia"
+year: 2013
+date_added: 2015-11-14
+url: http://www.informationisbeautifulawards.com/showcase/223-historic-london-as-seen-from-wikipedia
+image: viz/historic-london_sm.png
+description: >-
+
+    "While Wikipedia is a most modern creation, its content reflects a historical accumulation of facts and attention. This map of London shows the density of articles in Wikipedia associated with locations in London."
+
+authors:  "<a href='https://twitter.com/Elijah_Meeks'>Elijah Meeks</a>"
+---
+title: "Wikipedia edit wars: The most controversial topics"
+year: 2013
+date_added: 2015-11-14
+url: http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1
+image: viz/most-controversial_sm.png
+description: >-
+
+    "Taha Yasseri of the Oxford Internet Institute and colleagues looked at Wikipedia’s different language editions from their inception (January 2001 for English) to March 2010 and ranked the most contested articles, based on the number of reverts and the number of edits the contributors have made (dubbed their “maturity score”)."
+
+authors:  "Roxana Willis and Lloyd Parker"
+---
+title: What is Wikipedia about?
+year: 2014
+date_added: 2015-11-14
+url: http://www.informationisbeautifulawards.com/showcase/608-what-is-wikipedia-about
+image: viz/what-is-wikipedia_sm.png
+description: >-
+
+    "This visualisation shows the distribution of the 10,568,679 items on Wikipedia, sorted by type."
+
+authors:  "Paul-Antoine Chevalier, <a href='http://www.askmedia.fr/'>Arnaud Picandet</a>"
+---
+title: Wikiflows - One Year on Wikipedia
+year: 2014
+date_added: 2015-11-14
+url: http://www.informationisbeautifulawards.com/showcase/600-wikiflows-one-year-on-wikipedia
+image: viz/wikiflows_sm.png
+description: >-
+
+    "Which were the most visited pages during 2013? Which were the most edited? What’s the overall picture of one year of history looked through Wikipedia?"
+
+authors:  "<a href='https://twitter.com/mikima'>Valerio Pellegrini</a>, Michele Mauri"
+---
+title: History Flow
+year: 2003
+date_added: 2015-11-14
+url: http://www.bewitched.com/historyflow.html
+image: viz/history_flow_sm.png
+description: >-
+
+    "The colorful history flow diagrams take a lengthy edit history and turn it into a picture."
+
+authors:  "<a href='http://www.bewitched.com/index.html'>Martin Wattenberg</a>, <a href='http://www.fernandaviegas.com/'>Fernanda Viégas</a>, <a href='http://www.kushaldave.com/index.html'>Kushal Dave</a>, <a href='http://mrfeinberg.com/'>Jonathan Feinberg</a>"
+data: Wikipedia Dumps
+---
+title: Wikidata Spiral
+year: 2015
+date_added: 2015-11-14
+url: https://rawgit.com/cdrini/wikidata-spiral/master/index.html
+code: <a href="https://github.com/cdrini/wikidata-spiral">on github</a>
+image: viz/wikidata-spiral_sm.png
+description: >-
+
+    "Originally created as a means to explore Wikidata's subclass hierarchy, Wikidata Spiral proved to be more useful in visualizing art. "
+
+authors: <a href="https://github.com/cdrini">Drini Cami</a>
+data: <a href="http://wdq.wmflabs.org/">Wikidata Query API</a>
 ---
 title: whoCOLOR
 year: 2015
@@ -406,7 +486,7 @@ authors: >
     href="https://twitter.com/notafish">Delphine Ménard</a>
 code: >
     <a href="https://github.com/edsu/wikistream">available on github</a>.
-data: Wikimedia IRC recent changes feed
+data: Wikimedia recent changes feed
 ---
 title: Wikipedia Gender
 year: 2011
@@ -437,17 +517,18 @@ code:
 data: <a href="http://wikipedia-miner.cms.waikato.ac.nz/">Wikipedia miner</a>
 ---
  # other sections for the site
----
 section_title: About
 content: >
 
-    <p>This is a collection of <a href="//blog.hatnote.com">our</a>
-    favorite projects built on open data from Wikipedia and other
-    Wikimedia projects. Source code and more details about this page are <a
+    <p>This is a collection of our favorite visualizations, infographics, and other projects built on open data from Wikipedia and other
+    Wikimedia projects, curated by <a href="https://twitter.com/sklaporte">Stephen LaPorte</a> and <a href="https://twitter.com/mhashemi">Mahmoud Hashemi</a>. Source code and more details about this page are <a
     href="https://github.com/hatnote/seealso">available on Github</a>.</p>
     <p>If you know other cool Wikipedia-based projects, please <a
     href="//blog.hatnote.com/ask">submit a link</a>.</p>
-
+     <p><a name="missing"></a>Not all of the projects have their source code or data posted online. If you have more information about any of these porjects, <a
+    href="//blog.hatnote.com/ask">please get in touch</a>. We'd love to hear more.</p>
+    <p>Check out more <a
+    href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, too.</p>
 ---
 section_title: Further reading
 content: >
@@ -458,3 +539,4 @@ content: >
     links</a>.</li> <li><a
     href="http://c2.com/cgi/wiki?VisualizeTheWiki">Visualize The Wiki</a> on
     c2.</li> </ul>
+

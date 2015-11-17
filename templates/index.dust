@@ -1,173 +1,223 @@
 <html>
 <head>
-<title>See, also: Visualizations of Wikipedia</title>
+<title>See also: Favorite visualizations of Wikipedia</title>
 <meta name="description" content="A collection of visualization projects built on Wikipedia data">
-<meta name="keywords" content="Wikipedia,visualization,visualizing,data,interactive,infographic,research,seealso">
+<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote">
+<meta charset="utf-8" /> 
 
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="assets/item.min.css">
-
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto" rel="stylesheet" type="text/css">
 <script src="assets/jquery.js"></script>
+<script src="assets/isotope.min.js"></script>
+<script src="assets/fit-columns.js"></script>
 
-<script src="assets/semantic.min.js"></script>
 <script>
 $(function() {
-	$('.more').hide()
+	$('.content').hide(function () {
+        grid.isotope('layout');
+    });
+	
+    var grid = $('.grid-area').isotope({
+    	itemSelector: '.grid-item',
+    	masonry: {
+      		columnWidth: 320,
+    	}
+  	});
 
-	$('.ui.items > .item').click(function() {
-		if ($('.image', this).hasClass('smaller')) {
-			$('.image', this).removeClass('smaller');
-			$('.description', this).show()
-			$('.more', this).hide()
-		} else {
-			$('.image', this).addClass('smaller');
-			$('.description', this).hide()
-			$('.more', this).show()
-		}
-	})
+  	grid.on('click', '.grid-item', function() {
+
+  		 $('.content', this).toggle();
+  		 grid.isotope('layout');
+
+  	});
+  	
 })
 </script>
+
 <style>
-body.items {
-	font-family: Helvetica, sans-serif;
-	font-size: 0.85em;
-	margin:0;
-}
-.ui.items>.row>.item, .ui.items>.item {
-	width: 360px;
-	max-height: 375px;
-}
-.ui.items .item:hover {
-	<!-- cursor:default; -->
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f1f2f0;
+    
 
 }
-.ui.items .item>.image {
-	height: 170px;
-	overflow:hidden;
-	transition: height 0.8s;
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+	margin: 1em;
+    font-size: medium;
 }
-.ui.items .item>.image>img {
-	
+
+h2 a {
+	text-decoration: none;
 }
-.ui.items .item>.content>.name {
-	max-width: 280px;
-}
-.ui.items .item>.smaller {
-	height: 120px;
-	overflow:hidden;
-}
-.ui.header {
-	margin: 0;
-}
-.ui.divider {
-	margin: 0;
-}
-.main {
-	margin: 0.5em;
-	margin-top: 3em;
-}
+
 a {
-	color: #3B579D;
-	text-decoration: underline;
+    color: rgb(0, 152, 216);
+    text-decoration: none;
 }
+
 a:hover {
-	background-color: #FFFFCC;
+    color: rgb(11, 53, 54);
+    border-bottom: 1px solid rgb(245, 65, 35);
 }
+
+.missing {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
 .head {
-	background: #f8f8f8;
-	margin: 0;
-	padding: 1em;
-	border-bottom: 1px solid #d8e6ec;
+    background: #fff;
+    padding: 2em;
+    border-bottom: 1px solid rgb(47, 152, 216);
 }
-.more li {
-	padding-bottom: 0.5em;
-	margin: 0;
+
+.head h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
 }
-.more ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+
+.sub-head {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
 }
-a.name {
-	text-decoration: none;
+
+.container {
+    margin: 2em;
+
 }
-a.label {
-	text-decoration: none;
+
+.grid-item {
+	width: 300px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(216, 230, 236, 1);
+	overflow: hidden;
+	margin-bottom: 20px;
+	cursor: pointer;
+    background-color: #fff;
 }
+
+.grid-item:hover {
+    box-shadow: 0 0 0 1px rgba(28, 27, 35, 0.2);
+}
+
+.year {
+	float: right;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: small;
+    font-weight: 200;
+    margin: 1.5em;
+}
+
 .description {
-	padding: 0.5em;
+	margin: 1em;
+	font-size: 0.85em;
+	color: rgba(0, 0, 0, 0.5);
 }
-.sections {
-	margin: 2em;
+
+.content {
+
 }
+
+.details {
+	list-style: none;
+    padding: 0;
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+.details li {
+	margin: 0.5em 0;
+	padding: 0.5em 0;
+	border-top: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.about-project {
+    background: #fff;
+    border-top: 1px solid #46454b;
+    padding: 0 0 2em 0;
+}
+
+.about-project .inner {
+        width: 700px;
+    margin: auto;
+}
+
+.about-project h2 {
+    margin: 1em 0 0 0;
+    font-size: 2em;
+    color: #db2f27;
+}
+
 </style>
 
 </head>
 
-<body class="items">
+<body>
 	<div class="head">
-		<h1 class="ui header">{page_title}
-			<div class="sub header">{page_subtitle|s}</div>
-		</h1>
+		<h1>{page_title}</h1>
+        <div class="sub-header">{page_subtitle|s}</div>
 	</div>
-	<div class="main container">
-		<div class="ui items">
+	<div class="container">
+		<div class="grid-area">
 		<!-- items -->
 		{#visualizations}
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="{url}" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="{image}">
+					<div class="year">{year}</div>
+					<h2><a class="name" href="{url}" target="_blank">{title}</a></h2>
+					<p class="description">{description|s} </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: {authors|s}
+						</li>
+					</ul>
 				</div>
 				<div class="content">
-					<div class="meta">{year}</div>
-					<a class="name" href="{url}" target="_blank">{title}</a>
-					<p class="description">{description|s} </p>
-					<div class="more description">
-						{?more_description}
-						<p>{more_description}</p>
-						{/more_description}
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: {authors|s}
-							</li>
-							{?code}
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: {code|s}
-							</li>
-							{/code}
-							{?data}
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: {data|s}
-							</li>
-							{/data}
-							<li>
-								<i class="circular external url icon"></i><a href="{url}" target="_blank">{title}</a>
-							</li>
-						</ul>
-					</div>
+					{?more_description}
+					<p>{more_description}</p>
+					{/more_description}
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: {code|s} {^code}<a href="#missing" class="missing">none</a>{/code}
+						</li>
+						{?data}
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: {data|s}
+						</li>
+						{/data}
+					</ul>
+					
 				</div>
 			</div>
 		{/visualizations}
 		</div>
-		<!-- other sections -->
-		{#sections}
-			<div class="sections">
-			<div class="ui clearing"></div>
-			<h2 class="ui header">{section_title}</h2>
-			<div class="ui clearing divider"></div>
-				{content|s}
-			</div>
-
-		{/sections}
 	</div>
-</div>
+    <!-- other sections -->
+    <div class="about-project">
+        <div class="inner">
+        {#sections}
+            <div class="sections">
+            <div class="ui clearing"></div>
+            <h2 class="ui header">{section_title}</h2>
+            <div class="ui clearing divider"></div>
+                {content|s}
+            </div>
+        {/sections}
+        </div>
+    </div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

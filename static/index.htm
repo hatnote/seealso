@@ -1,1068 +1,1320 @@
 <html>
 <head>
-<title>See, also: Visualizations of Wikipedia</title>
+<title>See also: Favorite visualizations of Wikipedia</title>
 <meta name="description" content="A collection of visualization projects built on Wikipedia data">
-<meta name="keywords" content="Wikipedia,visualization,visualizing,data,interactive,infographic,research,seealso">
+<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote">
+<meta charset="utf-8" /> 
 
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="assets/item.min.css">
-
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto' rel='stylesheet' type='text/css'>
 <script src="assets/jquery.js"></script>
+<script src="assets/isotope.min.js"></script>
+<script src="assets/fit-columns.js"></script>
 
-<script src="assets/semantic.min.js"></script>
 <script>
 $(function() {
-	$('.more').hide()
+	$('.content').hide(function () {
+        grid.isotope('layout');
+    });
+	
+    var grid = $('.grid-area').isotope({
+    	itemSelector: '.grid-item',
+    	masonry: {
+      		columnWidth: 320,
+    	}
+  	});
 
-	$('.ui.items > .item').click(function() {
-		if ($('.image', this).hasClass('smaller')) {
-			$('.image', this).removeClass('smaller');
-			$('.description', this).show()
-			$('.more', this).hide()
-		} else {
-			$('.image', this).addClass('smaller');
-			$('.description', this).hide()
-			$('.more', this).show()
-		}
-	})
+  	grid.on('click', '.grid-item', function() {
+
+  		 $('.content', this).toggle();
+  		 grid.isotope('layout');
+
+  	});
+  	
 })
 </script>
+
 <style>
-body.items {
-	font-family: Helvetica, sans-serif;
-	font-size: 0.85em;
-	margin:0;
-}
-.ui.items>.row>.item, .ui.items>.item {
-	width: 360px;
-	max-height: 375px;
-}
-.ui.items .item:hover {
-	<!-- cursor:default; -->
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f1f2f0;
+    
 
 }
-.ui.items .item>.image {
-	height: 170px;
-	overflow:hidden;
-	transition: height 0.8s;
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+	margin: 1em;
+    font-size: medium;
 }
-.ui.items .item>.image>img {
-	
+
+h2 a {
+	text-decoration: none;
 }
-.ui.items .item>.content>.name {
-	max-width: 280px;
-}
-.ui.items .item>.smaller {
-	height: 120px;
-	overflow:hidden;
-}
-.ui.header {
-	margin: 0;
-}
-.ui.divider {
-	margin: 0;
-}
-.main {
-	margin: 0.5em;
-	margin-top: 3em;
-}
+
 a {
-	color: #3B579D;
-	text-decoration: underline;
+    color: rgb(0, 152, 216);
+    text-decoration: none;
 }
+
 a:hover {
-	background-color: #FFFFCC;
+    color: rgb(11, 53, 54);
+    border-bottom: 1px solid rgb(245, 65, 35);
 }
+
+.missing {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
 .head {
-	background: #f8f8f8;
-	margin: 0;
-	padding: 1em;
-	border-bottom: 1px solid #d8e6ec;
+    background: #fff;
+    padding: 2em;
+    border-bottom: 1px solid rgb(47, 152, 216);
 }
-.more li {
-	padding-bottom: 0.5em;
-	margin: 0;
+
+.head h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
 }
-.more ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+
+.sub-head {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
 }
-a.name {
-	text-decoration: none;
+
+.container {
+    margin: 2em;
+
 }
-a.label {
-	text-decoration: none;
+
+.grid-item {
+	width: 300px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(216, 230, 236, 1);
+	overflow: hidden;
+	margin-bottom: 20px;
+	cursor: pointer;
+    background-color: #fff;
 }
+
+.grid-item:hover {
+    box-shadow: 0 0 0 1px rgba(28, 27, 35, 0.2);
+}
+
+.year {
+	float: right;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: small;
+    font-weight: 200;
+    margin: 1.5em;
+}
+
 .description {
-	padding: 0.5em;
+	margin: 1em;
+	font-size: 0.85em;
+	color: rgba(0, 0, 0, 0.5);
 }
-.sections {
-	margin: 2em;
+
+.content {
+
 }
+
+.details {
+	list-style: none;
+    padding: 0;
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+.details li {
+	margin: 0.5em 0;
+	padding: 0.5em 0;
+	border-top: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.about-project {
+    background: #fff;
+    border-top: 1px solid #46454b;
+    padding: 0 0 2em 0;
+}
+
+.about-project .inner {
+        width: 700px;
+    margin: auto;
+}
+
+.about-project h2 {
+    margin: 1em 0 0 0;
+    font-size: 2em;
+    color: #db2f27;
+}
+
 </style>
 
 </head>
 
-<body class="items">
+<body>
 	<div class="head">
-		<h1 class="ui header">See, also
-			<div class="sub header">A collection of visualization projects built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
+		<h1>See also</h1>
+        <div class="sub-header">A collection of our favorite visualizations built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 </div>
-		</h1>
 	</div>
-	<div class="main container">
-		<div class="ui items">
+	<div class="container">
+		<div class="grid-area">
 		<!-- items -->
 		
-			<div class="item" >
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://histography.io/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/histography_sm.png">
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://histography.io/" target="_blank">Histography</a></h2>
+					<p class="description">
+"Histography is interactive timeline that spans across 14 billion years of history, from the Big Bang to 2015. The site draws historical events from Wikipedia and self-updates daily with new recorded events." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href='http://cargocollective.com/matanstauber'>Matan Stauber</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.informationisbeautifulawards.com/showcase/223-historic-london-as-seen-from-wikipedia" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/historic-london_sm.png">
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://www.informationisbeautifulawards.com/showcase/223-historic-london-as-seen-from-wikipedia" target="_blank">Historic London as Seen from Wikipedia</a></h2>
+					<p class="description">
+"While Wikipedia is a most modern creation, its content reflects a historical accumulation of facts and attention. This map of London shows the density of articles in Wikipedia associated with locations in London." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href='https://twitter.com/Elijah_Meeks'>Elijah Meeks</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/most-controversial_sm.png">
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1" target="_blank">Wikipedia edit wars: The most controversial topics</a></h2>
+					<p class="description">
+"Taha Yasseri of the Oxford Internet Institute and colleagues looked at Wikipedia’s different language editions from their inception (January 2001 for English) to March 2010 and ranked the most contested articles, based on the number of reverts and the number of edits the contributors have made (dubbed their “maturity score”)." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Roxana Willis and Lloyd Parker
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.informationisbeautifulawards.com/showcase/608-what-is-wikipedia-about" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/what-is-wikipedia_sm.png">
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://www.informationisbeautifulawards.com/showcase/608-what-is-wikipedia-about" target="_blank">What is Wikipedia about?</a></h2>
+					<p class="description">
+"This visualisation shows the distribution of the 10,568,679 items on Wikipedia, sorted by type." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Paul-Antoine Chevalier, <a href='http://www.askmedia.fr/'>Arnaud Picandet</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.informationisbeautifulawards.com/showcase/600-wikiflows-one-year-on-wikipedia" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wikiflows_sm.png">
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://www.informationisbeautifulawards.com/showcase/600-wikiflows-one-year-on-wikipedia" target="_blank">Wikiflows - One Year on Wikipedia</a></h2>
+					<p class="description">
+"Which were the most visited pages during 2013? Which were the most edited? What’s the overall picture of one year of history looked through Wikipedia?" </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href='https://twitter.com/mikima'>Valerio Pellegrini</a>, Michele Mauri
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://www.bewitched.com/historyflow.html" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/history_flow_sm.png">
+					<div class="year">2003</div>
+					<h2><a class="name" href="http://www.bewitched.com/historyflow.html" target="_blank">History Flow</a></h2>
+					<p class="description">
+"The colorful history flow diagrams take a lengthy edit history and turn it into a picture." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href='http://www.bewitched.com/index.html'>Martin Wattenberg</a>, <a href='http://www.fernandaviegas.com/'>Fernanda Viégas</a>, <a href='http://www.kushaldave.com/index.html'>Kushal Dave</a>, <a href='http://mrfeinberg.com/'>Jonathan Feinberg</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia Dumps
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="https://rawgit.com/cdrini/wikidata-spiral/master/index.html" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wikidata-spiral_sm.png">
+					<div class="year">2015</div>
+					<h2><a class="name" href="https://rawgit.com/cdrini/wikidata-spiral/master/index.html" target="_blank">Wikidata Spiral</a></h2>
+					<p class="description">
+"Originally created as a means to explore Wikidata's subclass hierarchy, Wikidata Spiral proved to be more useful in visualizing art. " </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://github.com/cdrini">Drini Cami</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/cdrini/wikidata-spiral">on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://wdq.wmflabs.org/">Wikidata Query API</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://people.aifb.kit.edu/ffl//whovisual/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/whocolor_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2015</div>
-					<a class="name" href="http://people.aifb.kit.edu/ffl//whovisual/" target="_blank">whoCOLOR</a>
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://people.aifb.kit.edu/ffl//whovisual/" target="_blank">whoCOLOR</a></h2>
 					<p class="description">
 "creates an on-demand color-markup of the original authors of the text of any article on the (english) wikipedia." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Felix Stadthaus
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Felix Stadthaus
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/jurkan/whoCOLOR">on github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://people.aifb.kit.edu/ffl//whovisual/" target="_blank">whoCOLOR</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/jurkan/whoCOLOR">on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/vizidata_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2015</div>
-					<a class="name" href="http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/" target="_blank">ViziData</a>
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/" target="_blank">ViziData</a></h2>
 					<p class="description">
 "This is a visualization prototype for large datasets of spacio-temporal data from Wikidata.  Events for a selected time-interval are shown as aggregate points in a map like fashion." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://github.com/gordelwig">Georg Wild</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://github.com/gordelwig">Georg Wild</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/gordelwig/ViziData">on github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://github.com/gordelwig/ViziDataPreprocessor">processed</a> from Wikidata
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/" target="_blank">ViziData</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/gordelwig/ViziData">on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://github.com/gordelwig/ViziDataPreprocessor">processed</a> from Wikidata
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://www.infobaleen.com/wiki" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/infobaleen_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://www.infobaleen.com/wiki" target="_blank">Infobaleen Wikipedia Map</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://www.infobaleen.com/wiki" target="_blank">Infobaleen Wikipedia Map</a></h2>
 					<p class="description">
 "Each box is a <b>cluster of related Wikipedia pages</b>... like the continent of a world map." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://sites.google.com/site/andrealancichinetti/">Andrea Lancichinetti</a> & <a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://sites.google.com/site/andrealancichinetti/">Andrea Lancichinetti</a> & <a href="http://www.tp.umu.se/~rosvall/">Martin Rosvall</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://bitbucket.org/mapequation/infomap">InfoMap</a> + proprietary
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://www.infobaleen.com/wiki" target="_blank">Infobaleen Wikipedia Map</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://bitbucket.org/mapequation/infomap">InfoMap</a> + proprietary 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://passingon.natematias.com/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/passingon_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2015</div>
-					<a class="name" href="http://passingon.natematias.com/" target="_blank">Gender in New York Times Editorial Obituaries 1987 - 2007</a>
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://passingon.natematias.com/" target="_blank">Gender in New York Times Editorial Obituaries 1987 - 2007</a></h2>
 					<p class="description">
 "Wikipedia is an influential mirror on society, a means through which we understand our world. Wikipedia also has gaps that we can all work to fill. How are women faring?" </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/natematias">Nathan Matias</a> and <a href="http://web.mit.edu/sldiehl/www/">Sophie Diehl</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/natematias">Nathan Matias</a> and <a href="http://web.mit.edu/sldiehl/www/">Sophie Diehl</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://passingon.natematias.com/" target="_blank">Gender in New York Times Editorial Obituaries 1987 - 2007</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://language.media.mit.edu/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/language-mit_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://language.media.mit.edu/" target="_blank">Global Language Network</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://language.media.mit.edu/" target="_blank">Global Language Network</a></h2>
 					<p class="description">
 "Here we use the structure of the networks connecting multilingual speakers and translated texts, as expressed in book translations, multiple language editions of Wikipedia, and Twitter, to provide a concept of language importance that goes beyond simple economic or demographic measures." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://macro.media.mit.edu/">MIT Media Lab Macro Connections group</a> + more
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://macro.media.mit.edu/">MIT Media Lab Macro Connections group</a> + more
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://language.media.mit.edu/" target="_blank">Global Language Network</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Raw Wikipedia data
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://wiki.polyfra.me/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikigalaxy_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://wiki.polyfra.me/" target="_blank">WikiGalaxy</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://wiki.polyfra.me/" target="_blank">WikiGalaxy</a></h2>
 					<p class="description">
 Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot is a Wikipedia article, and their connections form constellations. </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.polyfra.me/">Owen Cornec</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.polyfra.me/">Owen Cornec</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://wiki.polyfra.me/" target="_blank">WikiGalaxy</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://projects.kraeutli.com/ica/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/backstory_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://projects.kraeutli.com/ica/" target="_blank">Backstory</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://projects.kraeutli.com/ica/" target="_blank">Backstory</a></h2>
 					<p class="description">
 "My hope is that Wikipedia stays around for a while so that we can look at 50 years of a topic so can really see from childhood on." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.kraeutli.com/index.php/about/">Florian Kräutli</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.kraeutli.com/index.php/about/">Florian Kräutli</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/fkraeutli/beautifulData">available on Github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://projects.kraeutli.com/ica/" target="_blank">Backstory</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/fkraeutli/beautifulData">available on Github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://muyueh.com/greenhoney/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/greenhoney_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://muyueh.com/greenhoney/" target="_blank">Green Honey</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://muyueh.com/greenhoney/" target="_blank">Green Honey</a></h2>
 					<p class="description">
 "Language represents our view of the world, and knowing its limits helps us understand how our perception works." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/muyueh">Muyueh Lee</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/muyueh">Muyueh Lee</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Raw data
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://muyueh.com/greenhoney/" target="_blank">Green Honey</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Raw data
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://datalooksdope.com/href/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/dld-wiki_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://datalooksdope.com/href/" target="_blank">href + U.S. cities</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://datalooksdope.com/href/" target="_blank">href + U.S. cities</a></h2>
 					<p class="description">
 "Is there a correlation between the population of a place and the number of hyperlinks on a Wikipedia page?" </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Max Einstein
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Max Einstein
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Raw pages
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://datalooksdope.com/href/" target="_blank">href + U.S. cities</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Raw pages
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://lwmap.uni-koeln.de/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/lwmap_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://lwmap.uni-koeln.de/" target="_blank">Local Wikipedia Map</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://lwmap.uni-koeln.de/" target="_blank">Local Wikipedia Map</a></h2>
 					<p class="description">
 "The motivation of this page is to get a little more oversight of the facts and connections which are part of the Wikipedia. To get the birds eye view of Wikipedia we have to focus a part of of the whole we want to focus. This focus should describes a field of articles that interrelate." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Rasmus Krempel
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Rasmus Krempel
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://dbpedia.org/About">DBpedia</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://lwmap.uni-koeln.de/" target="_blank">Local Wikipedia Map</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://dbpedia.org/About">DBpedia</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://simia.net/wikiglobe/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikipedia-globe_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://simia.net/wikiglobe/" target="_blank">Wikipedia globe</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://simia.net/wikiglobe/" target="_blank">Wikipedia globe</a></h2>
 					<p class="description">
 Using geocordinate data from Wikipedia articles, this interactive 3d globe illustrates the concentration of coverage in nine language editions of Wikipedia. </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://github.com/vrandezo">Denny Vrandečić</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://github.com/vrandezo">Denny Vrandečić</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/vrandezo/wikiglobe">available on github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: 
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/vrandezo/wikiglobe">available on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: 
 <a href="https://www.wikidata.org">Wikidata</a>, <a href="http://dbpedia.org/About">DBpedia</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://simia.net/wikiglobe/" target="_blank">Wikipedia globe</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://edsu.github.io/parisreview/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/paris-review_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2014</div>
-					<a class="name" href="http://edsu.github.io/parisreview/" target="_blank">Paris Review Interviews and Wikipedia</a>
+					<div class="year">2014</div>
+					<h2><a class="name" href="http://edsu.github.io/parisreview/" target="_blank">Paris Review Interviews and Wikipedia</a></h2>
 					<p class="description">
 "...I wanted to get a picture not only of what Wikipedia articles pointed at the Paris Review, but also Paris Review interviews which were not referenced in Wikipedia. So I wrote a little crawler that collected all the Paris Review interviews, and then figured out which ones were pointed at by English Wikipedia." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/edsu">Ed Summers</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/edsu">Ed Summers</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/parisreview">available on github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: 
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/parisreview">available on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: 
 <a href="http://dbpedia.org/About">DBpedia</a> - <a href="http://inkdroid.org/journal/2014/02/02/paris-review-interviews-and-wikipedia/">more info</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://edsu.github.io/parisreview/" target="_blank">Paris Review Interviews and Wikipedia</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://sergionunes.com/p/wikichanges/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikichanges_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2008</div>
-					<a class="name" href="http://sergionunes.com/p/wikichanges/" target="_blank">WikiChanges</a>
+					<div class="year">2008</div>
+					<h2><a class="name" href="http://sergionunes.com/p/wikichanges/" target="_blank">WikiChanges</a></h2>
 					<p class="description">
 Using Wikipedia's API, WikiChanges charts and compares revision activity of articles over time, offering insights into the editing patterns of contributors and the attentions of the masses. </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://paginas.fe.up.pt/~ssn/">Sérgio Nunes</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://paginas.fe.up.pt/~ssn/">Sérgio Nunes</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="http://paginas.fe.up.pt/~ssn/pubs/nunes08-wikisym.pdf">WikiSym Paper</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://sergionunes.com/p/wikichanges/" target="_blank">WikiChanges</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="http://paginas.fe.up.pt/~ssn/pubs/nunes08-wikisym.pdf">WikiSym Paper</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://haithams.github.io/community_visualization/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/community-interaction_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://haithams.github.io/community_visualization/" target="_blank">Wikimedia Community Visualization</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://haithams.github.io/community_visualization/" target="_blank">Wikimedia Community Visualization</a></h2>
 					<p class="description">
 Community interaction on Wikipedia, based on user communication on on talk pages. The graph is built with Gephi, showing 10,0000 connections between users. </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Haitham Shammaa
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Haitham Shammaa
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/haithams/community_visualization">available on github</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikimedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://haithams.github.io/community_visualization/" target="_blank">Wikimedia Community Visualization</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/haithams/community_visualization">available on github</a> 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikimedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://wikiproject.oii.ox.ac.uk/networks/index.php" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/co-editing_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2011</div>
-					<a class="name" href="http://wikiproject.oii.ox.ac.uk/networks/index.php" target="_blank">Co-editing patterns on Wikipedia</a>
+					<div class="year">2011</div>
+					<h2><a class="name" href="http://wikiproject.oii.ox.ac.uk/networks/index.php" target="_blank">Co-editing patterns on Wikipedia</a></h2>
 					<p class="description">
 "These links indicate individuals who have co-edited many pages together on Wikipedia. We use a custom weighting technique, and filter down to the core editors (in every language except Egyptian Arabic and Swahili where we use everyone). The fact that this core is so well connected indicates the coherence of the Wikipedia community." </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: 
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: 
 <a href="http://www.zerogeography.net/search/label/Wikipedia">Mark Graham</a>, Ahmed Medhat Mohammed, Bernie Hogan and Richard Farmbrough, Oxford Internet Institute
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://wikiproject.oii.ox.ac.uk/networks/index.php" target="_blank">Co-editing patterns on Wikipedia</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/ii_africa_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/" target="_blank">Information Imbalance: Africa on Wikipedia</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/" target="_blank">Information Imbalance: Africa on Wikipedia</a></h2>
 					<p class="description">
 "At the global scale (in an article that we currently have under review), we found that the number of Wikipedia articles within (or describing) a country can be explained to a large degree by just three factors: (1) the size of its population, (2) the number of its fixed broadband internet connections, and (3) the number of edits committed to Wikipedia by its population." </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.ralphstraumann.ch/">Ralph Straumann</a>, <a href="http://www.oii.ox.ac.uk/people/?id=165">Mark Graham</a>, <a href="http://www.oii.ox.ac.uk/people/?id=140">Bernie Hogan</a>, <a href="http://www.linkedin.com/profile/view?id=36036869">Ahmed Medhat</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.ralphstraumann.ch/">Ralph Straumann</a>, <a href="http://www.oii.ox.ac.uk/people/?id=165">Mark Graham</a>, <a href="http://www.oii.ox.ac.uk/people/?id=140">Bernie Hogan</a>, <a href="http://www.linkedin.com/profile/view?id=36036869">Ahmed Medhat</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://en.wikipedia.org/wiki/Wikipedia:Database_download">Wikipedia dumps</a>, <a href="http://wikilocation.org/">Wikilocation</a>, <a href="http://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Georeferenzierung/Hauptseite/Wikipedia-World/en">WikiProjekt Georeferenzierung</a>, <a href="http://stats.wikimedia.org/wikimedia/squids/SquidReportsCountriesLanguagesVisitsEdits.htm">Traffic stats</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/" target="_blank">Information Imbalance: Africa on Wikipedia</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://en.wikipedia.org/wiki/Wikipedia:Database_download">Wikipedia dumps</a>, <a href="http://wikilocation.org/">Wikilocation</a>, <a href="http://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Georeferenzierung/Hauptseite/Wikipedia-World/en">WikiProjekt Georeferenzierung</a>, <a href="http://stats.wikimedia.org/wikimedia/squids/SquidReportsCountriesLanguagesVisitsEdits.htm">Traffic stats</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/arthistory_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2012</div>
-					<a class="name" href="http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955" target="_blank">Art History on Wikipedia</a>
+					<div class="year">2012</div>
+					<h2><a class="name" href="http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955" target="_blank">Art History on Wikipedia</a></h2>
 					<p class="description">
 "I am a highly visual person. When I have to learn something new, I usually first try to make a sketch of the structure of the knowledge that I want (or have to ;-)) to study. This usually results in diagrams outlining the material, giving it some structured form that makes it easier for me to grasp. "
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Doron Goldfarb, Dieter Merk, Max Arends, Josef Froschauer
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Doron Goldfarb, Dieter Merk, Max Arends, Josef Froschauer
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://dbpedia.org/About">DBpedia</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955" target="_blank">Art History on Wikipedia</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://dbpedia.org/About">DBpedia</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/mosaic_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2007</div>
-					<a class="name" href="http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/" target="_blank">Emergent Mosaic of Wikipedian Activity</a>
+					<div class="year">2007</div>
+					<h2><a class="name" href="http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/" target="_blank">Emergent Mosaic of Wikipedian Activity</a></h2>
 					<p class="description">
 "In this case the nodes in the network are wikipedia articles and the edges are the links between articles.  We then ... used an algorithm to lay out all 650,000 nodes (wikipedia articles) that had at least one link in such a way that similar articles are near one another.  These are the yellow dots, which when viewed at low res give a yellow tint to the whole picture."
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://about.bh2.net/">Bruce Herr</a>, <a href="http://abeautifulwww.com/">Todd Holloway</a>, and <a href="http://ella.slis.indiana.edu/~katy/">Katy Börner</a>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://about.bh2.net/">Bruce Herr</a>, <a href="http://abeautifulwww.com/">Todd Holloway</a>, and <a href="http://ella.slis.indiana.edu/~katy/">Katy Börner</a>
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/" target="_blank">Emergent Mosaic of Wikipedian Activity</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://flowcircle.herokuapp.com/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/flow-circle_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://flowcircle.herokuapp.com/" target="_blank">Flow Circle</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://flowcircle.herokuapp.com/" target="_blank">Flow Circle</a></h2>
 					<p class="description">
 "First, this study introduces the Flow Circle, which is a new exploratory data analysis tool devised to solve such problems of History Flow. Second, this tool is used to actually visualize the Wiki revision history regarding gun politics in order to understand and analyze the flow of the revision history and the relationship and conflict structures between the authors based on the results of the MDS analysis."
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Jaeho Lee, Dongjin Kim, Jaejune Park, Kyungwon Lee
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Jaeho Lee, Dongjin Kim, Jaejune Park, Kyungwon Lee
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://flowcircle.herokuapp.com/" target="_blank">Flow Circle</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://www.wikipediaworldview.net/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikipedia_worldview_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://www.wikipediaworldview.net/" target="_blank">Wikipedia Worldview</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://www.wikipediaworldview.net/" target="_blank">Wikipedia Worldview</a></h2>
 					<p class="description">
 "A while ago, Wikipedia introduced <a href="http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Geographical_coordinates">georeferences</a>. Georeferences are a way to annotate geographic landmarks, borders, [and] cities within Wikipedia articles ... Wikipedia Worldview is an app to project Wikipedia georeferences onto a 2D plane, intended to analyze the language-based distribution."
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://de.linkedin.com/pub/simon-schulz/68/79a/6b">Simon Schulz</a>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://de.linkedin.com/pub/simon-schulz/68/79a/6b">Simon Schulz</a>
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://www.wikilocation.org/">WikiLocation</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://www.wikipediaworldview.net/" target="_blank">Wikipedia Worldview</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://www.wikilocation.org/">WikiLocation</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://www.chrisharrison.net/index.php/Visualizations/ClusterBall" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/clusterball_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2007</div>
-					<a class="name" href="http://www.chrisharrison.net/index.php/Visualizations/ClusterBall" target="_blank">ClusterBall</a>
+					<div class="year">2007</div>
+					<h2><a class="name" href="http://www.chrisharrison.net/index.php/Visualizations/ClusterBall" target="_blank">ClusterBall</a></h2>
 					<p class="description">
 "The clustering component of this visualization is vital. The mere presence of information isn't all that interesting; there is no context or relevance to be gleaned. However, the structure of information is revealing about where fields intersect and diverge, and ultimately about how humans organize information."
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://www.chrisharrison.net/index.php">Chris Harrison</a>
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://www.chrisharrison.net/index.php/Visualizations/ClusterBall" target="_blank">ClusterBall</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://notabilia.net/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/notabilia_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2011</div>
-					<a class="name" href="http://notabilia.net/" target="_blank">Notabilia</a>
+					<div class="year">2011</div>
+					<h2><a class="name" href="http://notabilia.net/" target="_blank">Notabilia</a></h2>
 					<p class="description">
 "We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. "
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/readermeter">Dario Taraborelli</a>, Giovanni Luca Ciampaglia, and Moritz Stefaner
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/readermeter">Dario Taraborelli</a>, Giovanni Luca Ciampaglia, and Moritz Stefaner
 
-							</li>
-							
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://notabilia.net/" target="_blank">Notabilia</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/geo-topic-map_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">A Map of the Geographic Structure of Wikipedia Topics</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">A Map of the Geographic Structure of Wikipedia Topics</a></h2>
 					<p class="description">
 "Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders."
  </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Olivier H. Beauchesne
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: Olivier H. Beauchesne
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/" target="_blank">A Map of the Geographic Structure of Wikipedia Topics</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia dumps
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://www.panoramap.org/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wlm-map_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://www.panoramap.org/" target="_blank">Map of Wiki Loves Monuments</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://www.panoramap.org/" target="_blank">Map of Wiki Loves Monuments</a></h2>
 					<p class="description">"Elle permet d'explorer les monuments historiques du monde entier."
  </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://bzg.fr/">bzg</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://bzg.fr/">bzg</a>
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/bzg/wlmmap">available on github</a>.
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://commons.wikimedia.org/wiki/Commons:Monuments_database"> Wikimedia Commons monuments database </a>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/bzg/wlmmap">available on github</a>. 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://commons.wikimedia.org/wiki/Commons:Monuments_database"> Wikimedia Commons monuments database </a>
 
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://www.panoramap.org/" target="_blank">Map of Wiki Loves Monuments</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://wikistream.wmflabs.org/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikistream_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2012</div>
-					<a class="name" href="http://wikistream.wmflabs.org/" target="_blank">wikistream</a>
+					<div class="year">2012</div>
+					<h2><a class="name" href="http://wikistream.wmflabs.org/" target="_blank">wikistream</a></h2>
 					<p class="description">"Wikistream is a Node.js webapp for helping visualize current editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit in the wikimedia IRC chat rooms (where updates are published), and makes them available on the Web in realtime."
  </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/edsu">Ed Summers</a>, <a href="https://twitter.com/mrdys">Sean Hannan</a>, <a href="https://twitter.com/notafish">Delphine Ménard</a>
+
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/edsu">Ed Summers</a>, <a href="https://twitter.com/mrdys">Sean Hannan</a>, <a href="https://twitter.com/notafish">Delphine Ménard</a>
-
-							</li>
-							
-							<li>
-								<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/wikistream">available on github</a>.
-
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: Wikimedia IRC recent changes feed
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://wikistream.wmflabs.org/" target="_blank">wikistream</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/wikistream">available on github</a>.
+ 
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikimedia recent changes feed
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://moebio.com/research/wikipediagender/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/gender_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2011</div>
-					<a class="name" href="http://moebio.com/research/wikipediagender/" target="_blank">Wikipedia Gender</a>
+					<div class="year">2011</div>
+					<h2><a class="name" href="http://moebio.com/research/wikipediagender/" target="_blank">Wikipedia Gender</a></h2>
 					<p class="description">"Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content."
  </p>
-					<div class="more description">
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/moebio">Santiago Ortiz</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
 						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/moebio">Santiago Ortiz</a>
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://moebio.com/research/wikipediagender/" target="_blank">Wikipedia Gender</a>
-							</li>
-						</ul>
-					</div>
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
-			<div class="item" >
+			<div class="grid-item" >
 				<div class="image">
 					<a class="red active ui corner label" href="http://sepans.com/wikistalker/" target="_blank">
 						<i class="mail forward icon"></i>
 					</a>
 					<img src="viz/wikistalker_sm.png">
-				</div>
-				<div class="content">
-					<div class="meta">2013</div>
-					<a class="name" href="http://sepans.com/wikistalker/" target="_blank">Wikistalker</a>
+					<div class="year">2013</div>
+					<h2><a class="name" href="http://sepans.com/wikistalker/" target="_blank">Wikistalker</a></h2>
 					<p class="description">"Wikistalker, inspired by ‘Web Stalker‘, is a way of understanding a concept by only seeing the visualization of the meta-structure of its Wikipedia article."
  </p>
-					<div class="more description">
-						
-						<ul>
-							<li>
-								<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://sepans.com/">sepans</a>, <a href="http://raschin.com/">raschin</a>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="http://sepans.com/">sepans</a>, <a href="http://raschin.com/">raschin</a>
 
-							</li>
-							
-							
-							<li>
-								<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://wikipedia-miner.cms.waikato.ac.nz/">Wikipedia miner</a>
-							</li>
-							
-							<li>
-								<i class="circular external url icon"></i><a href="http://sepans.com/wikistalker/" target="_blank">Wikistalker</a>
-							</li>
-						</ul>
-					</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href="http://wikipedia-miner.cms.waikato.ac.nz/">Wikipedia miner</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		
 		</div>
-		<!-- other sections -->
-		
-			<div class="sections">
-			<div class="ui clearing"></div>
-			<h2 class="ui header">About</h2>
-			<div class="ui clearing divider"></div>
-				
-<p>This is a collection of <a href="//blog.hatnote.com">our</a> favorite projects built on open data from Wikipedia and other Wikimedia projects. Source code and more details about this page are <a href="https://github.com/hatnote/seealso">available on Github</a>.</p> <p>If you know other cool Wikipedia-based projects, please <a href="//blog.hatnote.com/ask">submit a link</a>.</p>
-
-			</div>
-
-		
-			<div class="sections">
-			<div class="ui clearing"></div>
-			<h2 class="ui header">Further reading</h2>
-			<div class="ui clearing divider"></div>
-				<ul> <li>Erik Zachte's <a href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia Visualizations</a>.</li> <li>A set of <a href="https://pinboard.in/u:slaporte/t:wikipedia/">Wikipedia links</a>.</li> <li><a href="http://c2.com/cgi/wiki?VisualizeTheWiki">Visualize The Wiki</a> on c2.</li> </ul>
-
-			</div>
-
-		
 	</div>
-</div>
+    <!-- other sections -->
+    <div class="about-project">
+        <div class="inner">
+        
+            <div class="sections">
+            <div class="ui clearing"></div>
+            <h2 class="ui header">About</h2>
+            <div class="ui clearing divider"></div>
+                
+<p>This is a collection of our favorite visualizations, infographics, and other projects built on open data from Wikipedia and other Wikimedia projects, curated by <a href="https://twitter.com/sklaporte">Stephen LaPorte</a> and <a href="https://twitter.com/mhashemi">Mahmoud Hashemi</a>. Source code and more details about this page are <a href="https://github.com/hatnote/seealso">available on Github</a>.</p> <p>If you know other cool Wikipedia-based projects, please <a href="//blog.hatnote.com/ask">submit a link</a>.</p>
+ <p><a name="missing"></a>Not all of the projects have their source code or data posted online. If you have more information about any of these porjects, <a
+href="//blog.hatnote.com/ask">please get in touch</a>. We'd love to hear more.</p> <p>Check out more <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, too.</p>
+
+            </div>
+        
+            <div class="sections">
+            <div class="ui clearing"></div>
+            <h2 class="ui header">Further reading</h2>
+            <div class="ui clearing divider"></div>
+                <ul> <li>Erik Zachte's <a href="http://infodisiac.com/Wikimedia/Visualizations/">Wikipedia Visualizations</a>.</li> <li>A set of <a href="https://pinboard.in/u:slaporte/t:wikipedia/">Wikipedia links</a>.</li> <li><a href="http://c2.com/cgi/wiki?VisualizeTheWiki">Visualize The Wiki</a> on c2.</li> </ul>
+
+            </div>
+        
+        </div>
+    </div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

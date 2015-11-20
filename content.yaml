@@ -6,6 +6,20 @@ page_subtitle: >
     href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 ---
  # Each visualization should include a title, url, image, and description
+ ---
+title: Wikipulse
+year: 2011
+date_added: 2015-11-19
+url: http://wikipulse.herokuapp.com/
+image: viz/edit-history-stratigraphy_sm.png
+description: >-
+
+    A simple and familiar dashboard of edit rates to various wikis,
+    including Wikipedia and Wikidata.
+
+authors:  <a href="https://twitter.com/edsu">Ed Summers</a>
+data: Wikipedia Recent Changes IRC feed
+code: <a href="https://github.com/edsu/wikipulse">available on github</a>.
 ---
 title: "Wikipedia edit history stratigraphy"
 year: 2015
@@ -563,4 +577,3 @@ content: >
     links</a>.</li> <li><a
     href="http://c2.com/cgi/wiki?VisualizeTheWiki">Visualize The Wiki</a> on
     c2.</li> </ul>
-

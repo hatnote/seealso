@@ -11,10 +11,8 @@
 <script src="assets/fit-columns.js"></script>
 
 <script>
-$(function() {
-	$('.content').hide(function () {
-        grid.isotope('layout');
-    });
+$(window).load(function(){
+	$('.content').hide();
 	
     var grid = $('.grid-area').isotope({
     	itemSelector: '.grid-item',
@@ -23,13 +21,12 @@ $(function() {
     	}
   	});
 
-  	grid.on('click', '.grid-item', function() {
+    grid.isotope('layout');
 
+  	grid.on('click', '.grid-item', function() {
   		 $('.content', this).toggle();
   		 grid.isotope('layout');
-
   	});
-  	
 })
 </script>
 
@@ -123,7 +120,7 @@ a:hover {
 }
 
 .content {
-
+    display:none;
 }
 
 .details {

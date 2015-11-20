@@ -7,6 +7,30 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: "Wikipedia edit history stratigraphy"
+year: 2015
+date_added: 2015-11-19
+url: http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/
+image: viz/edit-history-stratigraphy_sm.png
+description: >-
+
+    "Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years."
+
+authors:  "<a href='https://twitter.com/fogonwater'>Chris McDowall</a>"
+data: "<a href='https://en.wikipedia.org/wiki/Special:Export'>Wikipedia XML Export</a>"
+---
+title: "Wikisearch"
+year: 2015
+date_added: 2015-11-19
+url: http://wikisearch.net/
+image: viz/wikisearch_sm.png
+description: >-
+
+    "Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years."
+
+authors:  "Clusterpoint"
+data: "Wikipedia Dumps"
+---
 title: "Histography"
 year: 2015
 date_added: 2015-11-14

@@ -5,16 +5,14 @@
 <meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote">
 <meta charset="utf-8" /> 
 
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto" rel="stylesheet" type="text/css">
 <script src="assets/jquery.js"></script>
 <script src="assets/isotope.min.js"></script>
 <script src="assets/fit-columns.js"></script>
 
 <script>
-$(function() {
-	$('.content').hide(function () {
-        grid.isotope('layout');
-    });
+$(window).load(function(){
+	$('.content').hide();
 	
     var grid = $('.grid-area').isotope({
     	itemSelector: '.grid-item',
@@ -23,13 +21,12 @@ $(function() {
     	}
   	});
 
-  	grid.on('click', '.grid-item', function() {
+    grid.isotope('layout');
 
+  	grid.on('click', '.grid-item', function() {
   		 $('.content', this).toggle();
   		 grid.isotope('layout');
-
   	});
-  	
 })
 </script>
 
@@ -123,7 +120,7 @@ a:hover {
 }
 
 .content {
-
+    display:none;
 }
 
 .details {
@@ -169,6 +166,72 @@ a:hover {
 	<div class="container">
 		<div class="grid-area">
 		<!-- items -->
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/edit-history-stratigraphy_sm.png">
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/" target="_blank">Wikipedia edit history stratigraphy</a></h2>
+					<p class="description">
+"Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href='https://twitter.com/fogonwater'>Chris McDowall</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: <a href='https://en.wikipedia.org/wiki/Special:Export'>Wikipedia XML Export</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://wikisearch.net/" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/wikisearch_sm.png">
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://wikisearch.net/" target="_blank">Wikisearch</a></h2>
+					<p class="description">
+"Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: Clusterpoint
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+						
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia Dumps
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
 		
 			<div class="grid-item" >
 				<div class="image">

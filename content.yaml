@@ -6,7 +6,31 @@ page_subtitle: >
     href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 ---
  # Each visualization should include a title, url, image, and description
- ---
+---
+title: Wikipedia Contributor Locations
+year: 2015
+date_added: 2015-11-19
+url: https://tools.wmflabs.org/wikipedia-contributor-locations/#!/main
+image: viz/contributor-locations_sm.png
+description: >-
+
+    "Enter the titles of Wikipedia articles to view a map of the locations of each edit."
+
+authors:  <a href="https://theopatt.com/">Theo Patt</a>
+data: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+code: <a href="https://github.com/theopolisme/wikipedia-contributor-locations">available on github</a>.
+---
+title: Omnipedia
+year: 2012
+date_added: 2015-11-21
+url: http://omnipedia.northwestern.edu/
+image: viz/omnipedia_sm.png
+description: >-
+
+    "Omnipedia highlights the similarities and differences that exist among the language editions, making salient information that is unique to each language as well as that which is shared more widely."
+
+authors:  "<a href='https://twitter.com/pattib'>Patti Bao</a>, <a href='https://twitter.com/bhecht'>Brent Hecht</a>, <a href='#'https://twitter.com/dagwood'>Darren Gergle</a>"
+---
 title: Wikipulse
 year: 2011
 date_added: 2015-11-19

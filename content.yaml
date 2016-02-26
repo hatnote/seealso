@@ -7,6 +7,22 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Music Genre Popularity Over the Years
+year: 2016
+date_added: 2016-02-26
+url: http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/
+image: viz/music-popularity_sm.png
+description: >-
+
+    "Wikipedia is a gold mine of lists, lists of lists and even lists
+    of lists of lists. One of these lists of lists happens to be
+    Billboard’s Hot 100 songs which allows us to browse Wikipedia’s
+    data pretty easily."
+
+authors:  <a href="https://twitter.com/microBrewData">Brian Brightside</a>
+data: Web scraping
+code: <a href="http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/">here</a>
+---
 title: Map of Contemporaries
 year: 2016
 date_added: 2016-02-26
@@ -14,7 +30,7 @@ url: https://ybogdanov.github.io/history-timeline/
 image: viz/map-of-contemporaries_sm.png
 description: >-
 
-    The history of the world in famous people’s lifespans.
+    "The history of the world in famous people’s lifespans."
 
 authors:  <a href="https://twitter.com/yuriybogdanov">Yura Bogdanov</a>
 data: Wikipedia dumps

@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>See also: Favorite visualizations of Wikipedia</title>
+<title>See, also: Featured visualizations of Wikipedia</title>
 <meta name="description" content="A collection of visualization projects built on Wikipedia data">
-<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote">
-<meta charset="utf-8" /> 
+<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote, dataviz">
+<meta charset="utf-8" />
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto" rel="stylesheet" type="text/css">
 <script src="assets/jquery.js"></script>
@@ -13,7 +13,7 @@
 <script>
 $(window).load(function(){
 	$('.content').hide();
-	
+
     var grid = $('.grid-area').isotope({
     	itemSelector: '.grid-item',
     	masonry: {
@@ -35,7 +35,7 @@ body {
 	font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #f1f2f0;
-    
+
 
 }
 
@@ -186,7 +186,7 @@ a:hover {
 					<p>{more_description}</p>
 					{/more_description}
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: {code|s} {^code}<a href="#missing" class="missing">none</a>{/code}
 						</li>
@@ -196,7 +196,7 @@ a:hover {
 						</li>
 						{/data}
 					</ul>
-					
+
 				</div>
 			</div>
 		{/visualizations}

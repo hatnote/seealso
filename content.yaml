@@ -7,6 +7,32 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Map of Contemporaries
+year: 2016
+date_added: 2016-02-26
+url: https://ybogdanov.github.io/history-timeline/
+image: viz/map-of-contemporaries_sm.png
+description: >-
+
+    The history of the world in famous people’s lifespans.
+
+authors:  <a href="https://twitter.com/yuriybogdanov">Yura Bogdanov</a>
+data: Wikipedia dumps
+code: <a href="https://github.com/ybogdanov/history-timeline">on github</a>.
+---
+title: Contropedia
+year: 2015
+date_added: 2015-11-19
+url: http://www.contropedia.net/demo
+image: viz/contropedia_sm.png
+description: >-
+
+    "Enter the titles of Wikipedia articles to view a map of the locations of each edit."
+
+authors:  <a href="https://theopatt.com/">Theo Patt</a>
+data: <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a>
+code: <a href="http://contropedia.net/#code">available in various packages</a>.
+---
 title: Wikipedia Contributor Locations
 year: 2015
 date_added: 2015-11-19

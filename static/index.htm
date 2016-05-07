@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>See also: Favorite visualizations of Wikipedia</title>
+<title>See, also: Featured visualizations of Wikipedia</title>
 <meta name="description" content="A collection of visualization projects built on Wikipedia data">
-<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote">
-<meta charset="utf-8" /> 
+<meta name="keywords" content="Wikipedia, visualization, visualizing, data, interactive, infographic, research, seealso, hatnote, dataviz">
+<meta charset="utf-8" />
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,200|Inconsolata|Roboto" rel="stylesheet" type="text/css">
 <script src="assets/jquery.js"></script>
@@ -13,7 +13,7 @@
 <script>
 $(window).load(function(){
 	$('.content').hide();
-	
+
     var grid = $('.grid-area').isotope({
     	itemSelector: '.grid-item',
     	masonry: {
@@ -35,7 +35,7 @@ body {
 	font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #f1f2f0;
-    
+
 
 }
 
@@ -159,13 +159,46 @@ a:hover {
 
 <body>
 	<div class="head">
-		<h1>See also</h1>
+		<h1>See, also</h1>
         <div class="sub-header">A collection of our favorite visualizations built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
 </div>
 	</div>
 	<div class="container">
 		<div class="grid-area">
 		<!-- items -->
+		
+			<div class="grid-item" >
+				<div class="image">
+					<a class="red active ui corner label" href="http://chronas.org/history" target="_blank">
+						<i class="mail forward icon"></i>
+					</a>
+					<img src="viz/chronas_sm.png">
+					<div class="year">2015</div>
+					<h2><a class="name" href="http://chronas.org/history" target="_blank">Chronas</a></h2>
+					<p class="description">
+"Chronas is a history project linking Wikipedia and Wikidata with a chronological and cartographical view." </p>
+					<ul class="details">
+						<li>
+							<i class="circular users blue icon"></i><strong>By</strong>: <a href="https://twitter.com/Chronasorg">Dietmar Aumann</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					
+					<ul class="details">
+
+						<li>
+							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
+						</li>
+						
+						<li>
+							<i class="circular settings green icon"></i><strong>Data</strong>: Wikipedia and Wikidata
+						</li>
+						
+					</ul>
+
+				</div>
+			</div>
 		
 			<div class="grid-item" >
 				<div class="image">
@@ -186,7 +219,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/densitydesign/strumentalia-seealsology">here</a> 
 						</li>
@@ -196,7 +229,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -219,7 +252,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/">here</a> 
 						</li>
@@ -229,7 +262,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -252,7 +285,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/ybogdanov/history-timeline">on github</a>. 
 						</li>
@@ -262,7 +295,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -285,7 +318,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="http://contropedia.net/#code">available in various packages</a>. 
 						</li>
@@ -295,7 +328,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -318,7 +351,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/theopolisme/wikipedia-contributor-locations">available on github</a>. 
 						</li>
@@ -328,7 +361,7 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -351,13 +384,13 @@ Explore the relationships among Wikipedia articles with a graph of See Also link
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -380,7 +413,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/wikipulse">available on github</a>. 
 						</li>
@@ -390,7 +423,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -413,7 +446,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -423,7 +456,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -446,7 +479,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -456,7 +489,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -479,13 +512,13 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -508,13 +541,13 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -537,13 +570,13 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -566,13 +599,13 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -595,13 +628,13 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -624,7 +657,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -634,7 +667,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -657,7 +690,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/cdrini/wikidata-spiral">on github</a> 
 						</li>
@@ -667,7 +700,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -690,7 +723,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/jurkan/whoCOLOR">on github</a> 
 						</li>
@@ -700,7 +733,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -723,7 +756,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/gordelwig/ViziData">on github</a> 
 						</li>
@@ -733,7 +766,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -756,7 +789,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://bitbucket.org/mapequation/infomap">InfoMap</a> + proprietary 
 						</li>
@@ -766,7 +799,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -789,7 +822,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -799,7 +832,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -822,7 +855,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -832,7 +865,7 @@ A simple and familiar dashboard of edit rates to various wikis, including Wikipe
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -855,7 +888,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -865,7 +898,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -888,7 +921,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/fkraeutli/beautifulData">available on Github</a> 
 						</li>
@@ -898,7 +931,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -921,7 +954,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -931,7 +964,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -954,7 +987,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -964,7 +997,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -987,7 +1020,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -997,7 +1030,7 @@ Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1020,7 +1053,7 @@ Using geocordinate data from Wikipedia articles, this interactive 3d globe illus
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/vrandezo/wikiglobe">available on github</a> 
 						</li>
@@ -1031,7 +1064,7 @@ Using geocordinate data from Wikipedia articles, this interactive 3d globe illus
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1054,7 +1087,7 @@ Using geocordinate data from Wikipedia articles, this interactive 3d globe illus
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/parisreview">available on github</a> 
 						</li>
@@ -1065,7 +1098,7 @@ Using geocordinate data from Wikipedia articles, this interactive 3d globe illus
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1088,7 +1121,7 @@ Using Wikipedia's API, WikiChanges charts and compares revision activity of arti
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="http://paginas.fe.up.pt/~ssn/pubs/nunes08-wikisym.pdf">WikiSym Paper</a> 
 						</li>
@@ -1098,7 +1131,7 @@ Using Wikipedia's API, WikiChanges charts and compares revision activity of arti
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1121,7 +1154,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/haithams/community_visualization">available on github</a> 
 						</li>
@@ -1131,7 +1164,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1155,7 +1188,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1165,7 +1198,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1188,7 +1221,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1198,7 +1231,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1223,7 +1256,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1233,7 +1266,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1258,7 +1291,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1268,7 +1301,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1293,7 +1326,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1303,7 +1336,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1328,7 +1361,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1338,7 +1371,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1363,7 +1396,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1373,7 +1406,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1398,13 +1431,13 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1428,7 +1461,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1438,7 +1471,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1461,7 +1494,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/bzg/wlmmap">available on github</a>. 
 						</li>
@@ -1472,7 +1505,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1496,7 +1529,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>: <a href="https://github.com/edsu/wikistream">available on github</a>.
  
@@ -1507,7 +1540,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1530,7 +1563,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1540,7 +1573,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		
@@ -1564,7 +1597,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 				<div class="content">
 					
 					<ul class="details">
-						
+
 						<li>
 							<i class="circular code red icon"></i><strong>Code</strong>:  <a href="#missing" class="missing">none</a>
 						</li>
@@ -1574,7 +1607,7 @@ Community interaction on Wikipedia, based on user communication on on talk pages
 						</li>
 						
 					</ul>
-					
+
 				</div>
 			</div>
 		

@@ -7,6 +7,18 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: The Universe of Miles Davis
+year: 2016
+date_added: 2016-05-27
+url: http://polygraph.cool/miles/
+image: viz/miles_sm.png
+description: >-
+
+    "Miles Davis’ legacy, represented by every Wikipedia page that mentions him."
+
+authors: <a href="https://twitter.com/matthew_daniels">Matt Daniels</a>
+data: Wikipedia
+---
 title: Chronas
 year: 2015
 date_added: 2016-05-07

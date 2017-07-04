@@ -697,6 +697,7 @@ content: >
     href="//blog.hatnote.com/ask">please get in touch</a>. We'd love to hear more.</p>
     <p>Check out more <a
     href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, too.</p>
+    <a href="feed.rss"><img src="assets/feed.png" alt="RSS feed"></a>
 ---
 section_title: Further reading
 content: >

@@ -3,12 +3,12 @@
     <channel>
       <title>See, also</title>
       <link>http://seealso.org/</link>
-      <description>A collection of our favorite visualizations built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
+      <description>A collection of our favorite visualizations built on &lt;a href=&quot;https://meta.wikimedia.org/wiki/Research:Data&quot;&gt;Wikipedia data&lt;/a&gt;, curated by &lt;a href=&quot;//blog.hatnote.com&quot;&gt;Hatnote&lt;/a&gt;.
 </description>
       <generator>Hatnote See also 0.1</generator>
       <language>en</language>
       <copyright></copyright>
-      <lastBuildDate>Tue, 04 Jul 2017 20:20:55 -0000</lastBuildDate>
+      <lastBuildDate>Tue, 04 Jul 2017 20:27:41 -0000</lastBuildDate>
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>

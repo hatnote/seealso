@@ -3,7 +3,7 @@
     <channel>
       <title>{page_title}</title>
       <link>http://seealso.org/</link>
-      <description>{page_subtitle|s}</description>
+      <description>{page_subtitle}</description>
       <generator>Hatnote See also 0.1</generator>
       <language>en</language>
       <copyright>{copyright}</copyright>

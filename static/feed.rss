@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" version="2.0">
+    <channel>
+      <title>See, also</title>
+      <link>http://seealso.org/</link>
+      <description>A collection of our favorite visualizations built on <a href="https://meta.wikimedia.org/wiki/Research:Data">Wikipedia data</a>, curated by <a href="//blog.hatnote.com">Hatnote</a>.
+</description>
+      <generator>Hatnote See also 0.1</generator>
+      <language>en</language>
+      <copyright></copyright>
+      <lastBuildDate>Tue, 04 Jul 2017 20:20:55 -0000</lastBuildDate>
+      <ttl>60</ttl>
+      <sy:updatePeriod>hourly</sy:updatePeriod>
+      <sy:updateFrequency>1</sy:updateFrequency>
+      
+      <item>
+        <title>Geolinguistic Contrasts in Wikipedia</title>
+        <pubDate>Sun, 04 Jun 2017 07:00:00 -0000</pubDate>
+        <guid>http://lionelmichel.net/wikipedia/Geolinguistic_contrasts.html</guid>
+        <link>http://lionelmichel.net/wikipedia/Geolinguistic_contrasts.html</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/geolang_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;In this project, I intended to explore knowledge diversity across the different language versions of one and the same article on Wikipedia.&quot; - by &lt;a href=&quot;http://www.lionelmichel.net/about-me.html&quot;&gt;Lionel Michel&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;http://www.lionelmichel.net/posts/geolinguistic.html&quot;&gt;concept&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Van Gogh in images on Wikipedia</title>
+        <pubDate>Sun, 04 Jun 2017 07:00:00 -0000</pubDate>
+        <guid>http://projects.datavis.club/van-gogh-in-images-on-wikipedia/</guid>
+        <link>http://projects.datavis.club/van-gogh-in-images-on-wikipedia/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/van_gogh_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The visualization explores how different languages present Van Gogh's work and life by images.&quot; - by &lt;a href=&quot;https://twitter.com/laessr&quot;&gt;Christian Laesser&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>The Universe of Miles Davis</title>
+        <pubDate>Fri, 27 May 2016 07:00:00 -0000</pubDate>
+        <guid>http://polygraph.cool/miles/</guid>
+        <link>http://polygraph.cool/miles/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/miles_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Miles Davis’ legacy, represented by every Wikipedia page that mentions him.&quot; - by &lt;a href=&quot;https://twitter.com/matthew_daniels&quot;&gt;Matt Daniels&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Chronas</title>
+        <pubDate>Sat, 07 May 2016 07:00:00 -0000</pubDate>
+        <guid>http://chronas.org/history</guid>
+        <link>http://chronas.org/history</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/chronas_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Chronas is a history project linking Wikipedia and Wikidata with a chronological and cartographical view.&quot; - by &lt;a href=&quot;https://twitter.com/Chronasorg&quot;&gt;Dietmar Aumann&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Seealsology</title>
+        <pubDate>Sat, 26 Mar 2016 07:00:00 -0000</pubDate>
+        <guid>http://tools.medialab.sciences-po.fr/seealsology/</guid>
+        <link>http://tools.medialab.sciences-po.fr/seealsology/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/seealsology_sm.png&quot;&gt;
+          &lt;p&gt;
+Explore the relationships among Wikipedia articles with a graph of See Also links. - by &lt;a href=&quot;http://www.densitydesign.org/&quot;&gt;Density Design&lt;/a&gt; &amp; &lt;a href=&quot;http://www.medialab.sciences-po.fr/&quot;&gt;Médialab Sciences Po&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/densitydesign/strumentalia-seealsology&quot;&gt;here&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Music Genre Popularity Over the Years</title>
+        <pubDate>Fri, 26 Feb 2016 08:00:00 -0000</pubDate>
+        <guid>http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/</guid>
+        <link>http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/music-popularity_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Wikipedia is a gold mine of lists, lists of lists and even lists of lists of lists. One of these lists of lists happens to be Billboard’s Hot 100 songs which allows us to browse Wikipedia’s data pretty easily.&quot; - by &lt;a href=&quot;https://twitter.com/microBrewData&quot;&gt;Brian Brightside&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;http://www.microbrewdata.com/defining-a-modern-history-of-music-using-wikipedia-data/&quot;&gt;here&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Map of Contemporaries</title>
+        <pubDate>Fri, 26 Feb 2016 08:00:00 -0000</pubDate>
+        <guid>https://ybogdanov.github.io/history-timeline/</guid>
+        <link>https://ybogdanov.github.io/history-timeline/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/map-of-contemporaries_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The history of the world in famous people’s lifespans.&quot; - by &lt;a href=&quot;https://twitter.com/yuriybogdanov&quot;&gt;Yura Bogdanov&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/ybogdanov/history-timeline&quot;&gt;on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Contropedia</title>
+        <pubDate>Thu, 19 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.contropedia.net/demo</guid>
+        <link>http://www.contropedia.net/demo</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/contropedia_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Enter the titles of Wikipedia articles to view a map of the locations of each edit.&quot; - by &lt;a href=&quot;https://theopatt.com/&quot;&gt;Theo Patt&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;http://contropedia.net/#code&quot;&gt;available in various packages&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia Contributor Locations</title>
+        <pubDate>Thu, 19 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>https://tools.wmflabs.org/wikipedia-contributor-locations/#!/main</guid>
+        <link>https://tools.wmflabs.org/wikipedia-contributor-locations/#!/main</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/contributor-locations_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Enter the titles of Wikipedia articles to view a map of the locations of each edit.&quot; - by &lt;a href=&quot;https://theopatt.com/&quot;&gt;Theo Patt&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/theopolisme/wikipedia-contributor-locations&quot;&gt;available on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Omnipedia</title>
+        <pubDate>Sat, 21 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://omnipedia.northwestern.edu/</guid>
+        <link>http://omnipedia.northwestern.edu/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/omnipedia_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Omnipedia highlights the similarities and differences that exist among the language editions, making salient information that is unique to each language as well as that which is shared more widely.&quot; - by &lt;a href='https://twitter.com/pattib'&gt;Patti Bao&lt;/a&gt;, &lt;a href='https://twitter.com/bhecht'&gt;Brent Hecht&lt;/a&gt;, &lt;a href='#'https://twitter.com/dagwood'&gt;Darren Gergle&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipulse</title>
+        <pubDate>Thu, 19 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://wikipulse.herokuapp.com/</guid>
+        <link>http://wikipulse.herokuapp.com/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikipulse_sm.png&quot;&gt;
+          &lt;p&gt;
+A simple and familiar dashboard of edit rates to various wikis, including Wikipedia and Wikidata. - by &lt;a href=&quot;https://twitter.com/edsu&quot;&gt;Ed Summers&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/edsu/wikipulse&quot;&gt;available on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia edit history stratigraphy</title>
+        <pubDate>Thu, 19 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/</guid>
+        <link>http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/edit-history-stratigraphy_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years.&quot; - by &lt;a href='https://twitter.com/fogonwater'&gt;Chris McDowall&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikisearch</title>
+        <pubDate>Thu, 19 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://wikisearch.net/</guid>
+        <link>http://wikisearch.net/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikisearch_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years.&quot; - by Clusterpoint&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Histography</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://histography.io/</guid>
+        <link>http://histography.io/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/histography_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Histography is interactive timeline that spans across 14 billion years of history, from the Big Bang to 2015. The site draws historical events from Wikipedia and self-updates daily with new recorded events.&quot; - by &lt;a href='http://cargocollective.com/matanstauber'&gt;Matan Stauber&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Historic London as Seen from Wikipedia</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.informationisbeautifulawards.com/showcase/223-historic-london-as-seen-from-wikipedia</guid>
+        <link>http://www.informationisbeautifulawards.com/showcase/223-historic-london-as-seen-from-wikipedia</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/historic-london_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;While Wikipedia is a most modern creation, its content reflects a historical accumulation of facts and attention. This map of London shows the density of articles in Wikipedia associated with locations in London.&quot; - by &lt;a href='https://twitter.com/Elijah_Meeks'&gt;Elijah Meeks&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia edit wars: The most controversial topics</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1</guid>
+        <link>http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/most-controversial_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Taha Yasseri of the Oxford Internet Institute and colleagues looked at Wikipedia’s different language editions from their inception (January 2001 for English) to March 2010 and ranked the most contested articles, based on the number of reverts and the number of edits the contributors have made (dubbed their “maturity score”).&quot; - by Roxana Willis and Lloyd Parker&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>What is Wikipedia about?</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.informationisbeautifulawards.com/showcase/608-what-is-wikipedia-about</guid>
+        <link>http://www.informationisbeautifulawards.com/showcase/608-what-is-wikipedia-about</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/what-is-wikipedia_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;This visualisation shows the distribution of the 10,568,679 items on Wikipedia, sorted by type.&quot; - by Paul-Antoine Chevalier, &lt;a href='http://www.askmedia.fr/'&gt;Arnaud Picandet&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikiflows - One Year on Wikipedia</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.informationisbeautifulawards.com/showcase/600-wikiflows-one-year-on-wikipedia</guid>
+        <link>http://www.informationisbeautifulawards.com/showcase/600-wikiflows-one-year-on-wikipedia</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikiflows_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Which were the most visited pages during 2013? Which were the most edited? What’s the overall picture of one year of history looked through Wikipedia?&quot; - by &lt;a href='https://twitter.com/mikima'&gt;Valerio Pellegrini&lt;/a&gt;, Michele Mauri&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>History Flow</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.bewitched.com/historyflow.html</guid>
+        <link>http://www.bewitched.com/historyflow.html</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/history_flow_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The colorful history flow diagrams take a lengthy edit history and turn it into a picture.&quot; - by &lt;a href='http://www.bewitched.com/index.html'&gt;Martin Wattenberg&lt;/a&gt;, &lt;a href='http://www.fernandaviegas.com/'&gt;Fernanda Viégas&lt;/a&gt;, &lt;a href='http://www.kushaldave.com/index.html'&gt;Kushal Dave&lt;/a&gt;, &lt;a href='http://mrfeinberg.com/'&gt;Jonathan Feinberg&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikidata Spiral</title>
+        <pubDate>Sat, 14 Nov 2015 08:00:00 -0000</pubDate>
+        <guid>https://rawgit.com/cdrini/wikidata-spiral/master/index.html</guid>
+        <link>https://rawgit.com/cdrini/wikidata-spiral/master/index.html</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikidata-spiral_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Originally created as a means to explore Wikidata's subclass hierarchy, Wikidata Spiral proved to be more useful in visualizing art. &quot; - by &lt;a href=&quot;https://github.com/cdrini&quot;&gt;Drini Cami&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/cdrini/wikidata-spiral&quot;&gt;on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>whoCOLOR</title>
+        <pubDate>Mon, 06 Jul 2015 07:00:00 -0000</pubDate>
+        <guid>http://people.aifb.kit.edu/ffl//whovisual/</guid>
+        <link>http://people.aifb.kit.edu/ffl//whovisual/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/whocolor_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;creates an on-demand color-markup of the original authors of the text of any article on the (english) wikipedia.&quot; - by Felix Stadthaus&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/jurkan/whoCOLOR&quot;&gt;on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>ViziData</title>
+        <pubDate>Mon, 06 Jul 2015 07:00:00 -0000</pubDate>
+        <guid>http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/</guid>
+        <link>http://wwwpub.zih.tu-dresden.de/~s5219191/vizidata/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/vizidata_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;This is a visualization prototype for large datasets of spacio-temporal data from Wikidata.  Events for a selected time-interval are shown as aggregate points in a map like fashion.&quot; - by &lt;a href=&quot;https://github.com/gordelwig&quot;&gt;Georg Wild&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/gordelwig/ViziData&quot;&gt;on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Infobaleen Wikipedia Map</title>
+        <pubDate>Wed, 04 Mar 2015 08:00:00 -0000</pubDate>
+        <guid>http://www.infobaleen.com/wiki</guid>
+        <link>http://www.infobaleen.com/wiki</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/infobaleen_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Each box is a &lt;b&gt;cluster of related Wikipedia pages&lt;/b&gt;... like the continent of a world map.&quot; - by &lt;a href=&quot;https://sites.google.com/site/andrealancichinetti/&quot;&gt;Andrea Lancichinetti&lt;/a&gt; &amp; &lt;a href=&quot;http://www.tp.umu.se/~rosvall/&quot;&gt;Martin Rosvall&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://bitbucket.org/mapequation/infomap&quot;&gt;InfoMap&lt;/a&gt; + proprietary &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Gender in New York Times Editorial Obituaries 1987 - 2007</title>
+        <pubDate>Mon, 16 Feb 2015 08:00:00 -0000</pubDate>
+        <guid>http://passingon.natematias.com/</guid>
+        <link>http://passingon.natematias.com/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/passingon_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Wikipedia is an influential mirror on society, a means through which we understand our world. Wikipedia also has gaps that we can all work to fill. How are women faring?&quot; - by &lt;a href=&quot;https://twitter.com/natematias&quot;&gt;Nathan Matias&lt;/a&gt; and &lt;a href=&quot;http://web.mit.edu/sldiehl/www/&quot;&gt;Sophie Diehl&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Global Language Network</title>
+        <pubDate>Sun, 21 Dec 2014 08:00:00 -0000</pubDate>
+        <guid>http://language.media.mit.edu/</guid>
+        <link>http://language.media.mit.edu/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/language-mit_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Here we use the structure of the networks connecting multilingual speakers and translated texts, as expressed in book translations, multiple language editions of Wikipedia, and Twitter, to provide a concept of language importance that goes beyond simple economic or demographic measures.&quot; - by &lt;a href=&quot;http://macro.media.mit.edu/&quot;&gt;MIT Media Lab Macro Connections group&lt;/a&gt; + more&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>WikiGalaxy</title>
+        <pubDate>Sun, 21 Dec 2014 08:00:00 -0000</pubDate>
+        <guid>http://wiki.polyfra.me/</guid>
+        <link>http://wiki.polyfra.me/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikigalaxy_sm.png&quot;&gt;
+          &lt;p&gt;
+Explore Wikipedia in 3D space by drifting through a galaxy of articles. Each dot is a Wikipedia article, and their connections form constellations. - by &lt;a href=&quot;http://www.polyfra.me/&quot;&gt;Owen Cornec&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Backstory</title>
+        <pubDate>Sun, 21 Dec 2014 08:00:00 -0000</pubDate>
+        <guid>http://projects.kraeutli.com/ica/</guid>
+        <link>http://projects.kraeutli.com/ica/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/backstory_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;My hope is that Wikipedia stays around for a while so that we can look at 50 years of a topic so can really see from childhood on.&quot; - by &lt;a href=&quot;http://www.kraeutli.com/index.php/about/&quot;&gt;Florian Kräutli&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/fkraeutli/beautifulData&quot;&gt;available on Github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Green Honey</title>
+        <pubDate>Sun, 21 Dec 2014 08:00:00 -0000</pubDate>
+        <guid>http://muyueh.com/greenhoney/</guid>
+        <link>http://muyueh.com/greenhoney/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/greenhoney_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Language represents our view of the world, and knowing its limits helps us understand how our perception works.&quot; - by &lt;a href=&quot;https://twitter.com/muyueh&quot;&gt;Muyueh Lee&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>href + U.S. cities</title>
+        <pubDate>Sun, 21 Dec 2014 08:00:00 -0000</pubDate>
+        <guid>http://datalooksdope.com/href/</guid>
+        <link>http://datalooksdope.com/href/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/dld-wiki_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Is there a correlation between the population of a place and the number of hyperlinks on a Wikipedia page?&quot; - by Max Einstein&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Local Wikipedia Map</title>
+        <pubDate>Sun, 10 Aug 2014 07:00:00 -0000</pubDate>
+        <guid>http://lwmap.uni-koeln.de/</guid>
+        <link>http://lwmap.uni-koeln.de/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/lwmap_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The motivation of this page is to get a little more oversight of the facts and connections which are part of the Wikipedia. To get the birds eye view of Wikipedia we have to focus a part of of the whole we want to focus. This focus should describes a field of articles that interrelate.&quot; - by Rasmus Krempel&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia globe</title>
+        <pubDate>Sun, 10 Aug 2014 07:00:00 -0000</pubDate>
+        <guid>http://simia.net/wikiglobe/</guid>
+        <link>http://simia.net/wikiglobe/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikipedia-globe_sm.png&quot;&gt;
+          &lt;p&gt;
+Using geocordinate data from Wikipedia articles, this interactive 3d globe illustrates the concentration of coverage in nine language editions of Wikipedia. - by &lt;a href=&quot;https://github.com/vrandezo&quot;&gt;Denny Vrandečić&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/vrandezo/wikiglobe&quot;&gt;available on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Paris Review Interviews and Wikipedia</title>
+        <pubDate>Sat, 08 Feb 2014 08:00:00 -0000</pubDate>
+        <guid>http://edsu.github.io/parisreview/</guid>
+        <link>http://edsu.github.io/parisreview/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/paris-review_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;...I wanted to get a picture not only of what Wikipedia articles pointed at the Paris Review, but also Paris Review interviews which were not referenced in Wikipedia. So I wrote a little crawler that collected all the Paris Review interviews, and then figured out which ones were pointed at by English Wikipedia.&quot; - by &lt;a href=&quot;https://twitter.com/edsu&quot;&gt;Ed Summers&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/edsu/parisreview&quot;&gt;available on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>WikiChanges</title>
+        <pubDate>Tue, 28 Jan 2014 08:00:00 -0000</pubDate>
+        <guid>http://sergionunes.com/p/wikichanges/</guid>
+        <link>http://sergionunes.com/p/wikichanges/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikichanges_sm.png&quot;&gt;
+          &lt;p&gt;
+Using Wikipedia's API, WikiChanges charts and compares revision activity of articles over time, offering insights into the editing patterns of contributors and the attentions of the masses. - by &lt;a href=&quot;http://paginas.fe.up.pt/~ssn/&quot;&gt;Sérgio Nunes&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;http://paginas.fe.up.pt/~ssn/pubs/nunes08-wikisym.pdf&quot;&gt;WikiSym Paper&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikimedia Community Visualization</title>
+        <pubDate>Sun, 15 Dec 2013 08:00:00 -0000</pubDate>
+        <guid>http://haithams.github.io/community_visualization/</guid>
+        <link>http://haithams.github.io/community_visualization/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/community-interaction_sm.png&quot;&gt;
+          &lt;p&gt;
+Community interaction on Wikipedia, based on user communication on on talk pages. The graph is built with Gephi, showing 10,0000 connections between users. - by Haitham Shammaa&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/haithams/community_visualization&quot;&gt;available on github&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Co-editing patterns on Wikipedia</title>
+        <pubDate>Sat, 16 Nov 2013 08:00:00 -0000</pubDate>
+        <guid>http://wikiproject.oii.ox.ac.uk/networks/index.php</guid>
+        <link>http://wikiproject.oii.ox.ac.uk/networks/index.php</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/co-editing_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;These links indicate individuals who have co-edited many pages together on Wikipedia. We use a custom weighting technique, and filter down to the core editors (in every language except Egyptian Arabic and Swahili where we use everyone). The fact that this core is so well connected indicates the coherence of the Wikipedia community.&quot; - by 
+&lt;a href=&quot;http://www.zerogeography.net/search/label/Wikipedia&quot;&gt;Mark Graham&lt;/a&gt;, Ahmed Medhat Mohammed, Bernie Hogan and Richard Farmbrough, Oxford Internet Institute&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Information Imbalance: Africa on Wikipedia</title>
+        <pubDate>Mon, 28 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/</guid>
+        <link>http://geography.oii.ox.ac.uk/2013/10/information-imbalance-africa-on-wikipedia/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/ii_africa_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;At the global scale (in an article that we currently have under review), we found that the number of Wikipedia articles within (or describing) a country can be explained to a large degree by just three factors: (1) the size of its population, (2) the number of its fixed broadband internet connections, and (3) the number of edits committed to Wikipedia by its population.&quot; - by &lt;a href=&quot;http://www.ralphstraumann.ch/&quot;&gt;Ralph Straumann&lt;/a&gt;, &lt;a href=&quot;http://www.oii.ox.ac.uk/people/?id=165&quot;&gt;Mark Graham&lt;/a&gt;, &lt;a href=&quot;http://www.oii.ox.ac.uk/people/?id=140&quot;&gt;Bernie Hogan&lt;/a&gt;, &lt;a href=&quot;http://www.linkedin.com/profile/view?id=36036869&quot;&gt;Ahmed Medhat&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Art History on Wikipedia</title>
+        <pubDate>Tue, 22 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955</guid>
+        <link>http://vsem.ec.tuwien.ac.at/wikiarthistory/index.php?entry=entry120519-174955</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/arthistory_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;I am a highly visual person. When I have to learn something new, I usually first try to make a sketch of the structure of the knowledge that I want (or have to ;-)) to study. This usually results in diagrams outlining the material, giving it some structured form that makes it easier for me to grasp. &quot;
+ - by Doron Goldfarb, Dieter Merk, Max Arends, Josef Froschauer
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Emergent Mosaic of Wikipedian Activity</title>
+        <pubDate>Tue, 22 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/</guid>
+        <link>http://abeautifulwww.com/2007/05/20/visualizing-the-power-struggle-in-wikipedia/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/mosaic_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;In this case the nodes in the network are wikipedia articles and the edges are the links between articles.  We then ... used an algorithm to lay out all 650,000 nodes (wikipedia articles) that had at least one link in such a way that similar articles are near one another.  These are the yellow dots, which when viewed at low res give a yellow tint to the whole picture.&quot;
+ - by &lt;a href=&quot;http://about.bh2.net/&quot;&gt;Bruce Herr&lt;/a&gt;, &lt;a href=&quot;http://abeautifulwww.com/&quot;&gt;Todd Holloway&lt;/a&gt;, and &lt;a href=&quot;http://ella.slis.indiana.edu/~katy/&quot;&gt;Katy Börner&lt;/a&gt;
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Flow Circle</title>
+        <pubDate>Fri, 18 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://flowcircle.herokuapp.com/</guid>
+        <link>http://flowcircle.herokuapp.com/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/flow-circle_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;First, this study introduces the Flow Circle, which is a new exploratory data analysis tool devised to solve such problems of History Flow. Second, this tool is used to actually visualize the Wiki revision history regarding gun politics in order to understand and analyze the flow of the revision history and the relationship and conflict structures between the authors based on the results of the MDS analysis.&quot;
+ - by Jaeho Lee, Dongjin Kim, Jaejune Park, Kyungwon Lee
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia Worldview</title>
+        <pubDate>Wed, 16 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://www.wikipediaworldview.net/</guid>
+        <link>http://www.wikipediaworldview.net/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikipedia_worldview_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;A while ago, Wikipedia introduced &lt;a href=&quot;http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Geographical_coordinates&quot;&gt;georeferences&lt;/a&gt;. Georeferences are a way to annotate geographic landmarks, borders, [and] cities within Wikipedia articles ... Wikipedia Worldview is an app to project Wikipedia georeferences onto a 2D plane, intended to analyze the language-based distribution.&quot;
+ - by &lt;a href=&quot;http://de.linkedin.com/pub/simon-schulz/68/79a/6b&quot;&gt;Simon Schulz&lt;/a&gt;
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>ClusterBall</title>
+        <pubDate>Tue, 15 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://www.chrisharrison.net/index.php/Visualizations/ClusterBall</guid>
+        <link>http://www.chrisharrison.net/index.php/Visualizations/ClusterBall</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/clusterball_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The clustering component of this visualization is vital. The mere presence of information isn't all that interesting; there is no context or relevance to be gleaned. However, the structure of information is revealing about where fields intersect and diverge, and ultimately about how humans organize information.&quot;
+ - by &lt;a href=&quot;http://www.chrisharrison.net/index.php&quot;&gt;Chris Harrison&lt;/a&gt;
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Notabilia</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://notabilia.net/</guid>
+        <link>http://notabilia.net/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/notabilia_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;We analyzed and visualized Article for Deletion (AfD) discussions in the English Wikipedia. The visualization above represents the 100 longest discussions that resulted in the deletion of the respective article. &quot;
+ - by &lt;a href=&quot;https://twitter.com/readermeter&quot;&gt;Dario Taraborelli&lt;/a&gt;, Giovanni Luca Ciampaglia, and Moritz Stefaner
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>A Map of the Geographic Structure of Wikipedia Topics</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/</guid>
+        <link>http://olihb.com/2013/01/23/a-map-of-the-geographic-structure-of-wikipedia-topics/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/geo-topic-map_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Since geography is never far from history, a lot of maps show the colonial past of many countries. As ethnic groups don’t always fall inside political borders, several maps reveal the presence of multiple ethnic or cultural groups within a country or of groups stretching across borders.&quot;
+ - by Olivier H. Beauchesne&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Map of Wiki Loves Monuments</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://www.panoramap.org/</guid>
+        <link>http://www.panoramap.org/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wlm-map_sm.png&quot;&gt;
+          &lt;p&gt;&quot;Elle permet d'explorer les monuments historiques du monde entier.&quot;
+ - by &lt;a href=&quot;http://bzg.fr/&quot;&gt;bzg&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/bzg/wlmmap&quot;&gt;available on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>wikistream</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://wikistream.wmflabs.org/</guid>
+        <link>http://wikistream.wmflabs.org/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikistream_sm.png&quot;&gt;
+          &lt;p&gt;&quot;Wikistream is a Node.js webapp for helping visualize current editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit in the wikimedia IRC chat rooms (where updates are published), and makes them available on the Web in realtime.&quot;
+ - by &lt;a href=&quot;https://twitter.com/edsu&quot;&gt;Ed Summers&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/mrdys&quot;&gt;Sean Hannan&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/notafish&quot;&gt;Delphine Ménard&lt;/a&gt;
+&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/edsu/wikistream&quot;&gt;available on github&lt;/a&gt;.
+ &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikipedia Gender</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://moebio.com/research/wikipediagender/</guid>
+        <link>http://moebio.com/research/wikipediagender/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/gender_sm.png&quot;&gt;
+          &lt;p&gt;&quot;Using the gender api that I discovered in this project, I wanted to see the relations between the proportion female/male editing and article and its content.&quot;
+ - by &lt;a href=&quot;https://twitter.com/moebio&quot;&gt;Santiago Ortiz&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wikistalker</title>
+        <pubDate>Sat, 12 Oct 2013 07:00:00 -0000</pubDate>
+        <guid>http://sepans.com/wikistalker/</guid>
+        <link>http://sepans.com/wikistalker/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wikistalker_sm.png&quot;&gt;
+          &lt;p&gt;&quot;Wikistalker, inspired by ‘Web Stalker‘, is a way of understanding a concept by only seeing the visualization of the meta-structure of its Wikipedia article.&quot;
+ - by &lt;a href=&quot;http://sepans.com/&quot;&gt;sepans&lt;/a&gt;, &lt;a href=&quot;http://raschin.com/&quot;&gt;raschin&lt;/a&gt;
+&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+    </channel>
+</rss>

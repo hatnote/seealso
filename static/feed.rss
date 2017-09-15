@@ -8,10 +8,23 @@
       <generator>Hatnote See also 0.1</generator>
       <language>en</language>
       <copyright></copyright>
-      <lastBuildDate>Tue, 04 Jul 2017 20:27:41 -0000</lastBuildDate>
+      <lastBuildDate>Fri, 15 Sep 2017 05:03:11 -0000</lastBuildDate>
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
+      
+      <item>
+        <title>Lifemap</title>
+        <pubDate>Thu, 14 Sep 2017 07:00:00 -0000</pubDate>
+        <guid>http://lifemap.univ-lyon1.fr/explore.html</guid>
+        <link>http://lifemap.univ-lyon1.fr/explore.html</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/lifemap_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;An exhaustive knowledge of the evolutionary relationships linking all organisms (the whole biodiversity) would produce a tree-like structure, referred to as the Tree of Life (ToL).&quot; - by &lt;a href=&quot;https://twitter.com/damdevienne&quot;&gt;Damien M. de Vienne&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/damiendevienne/Lifemap&quot;&gt;on github&lt;/a&gt;, &lt;a href=&quot;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001624&quot;&gt;described in PLoS Biology&lt;/a&gt; &lt;/p&gt;
+        </description>
+      </item>
       
       <item>
         <title>Geolinguistic Contrasts in Wikipedia</title>

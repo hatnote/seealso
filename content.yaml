@@ -7,6 +7,21 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Lifemap
+url: http://lifemap.univ-lyon1.fr/explore.html
+year: 2016
+date_added: 2017-09-14
+image: viz/lifemap_sm.png
+description: >-
+
+    "An exhaustive knowledge of the evolutionary relationships linking
+    all organisms (the whole biodiversity) would produce a tree-like
+    structure, referred to as the Tree of Life (ToL)."
+
+authors: <a href="https://twitter.com/damdevienne">Damien M. de Vienne</a>
+data: NCBI and OTOL data, and Wikipedia
+code: <a href="https://github.com/damiendevienne/Lifemap">on github</a>, <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2001624">described in PLoS Biology</a>
+---
 title: Geolinguistic Contrasts in Wikipedia
 url: http://lionelmichel.net/wikipedia/Geolinguistic_contrasts.html
 year: 2014

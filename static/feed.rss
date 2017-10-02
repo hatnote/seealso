@@ -8,10 +8,23 @@
       <generator>Hatnote See also 0.1</generator>
       <language>en</language>
       <copyright></copyright>
-      <lastBuildDate>Fri, 15 Sep 2017 05:03:11 -0000</lastBuildDate>
+      <lastBuildDate>Sun, 01 Oct 2017 23:55:09 -0000</lastBuildDate>
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
+      
+      <item>
+        <title>Wikipedia graph mining for collective memories</title>
+        <pubDate>Sun, 01 Oct 2017 07:00:00 -0000</pubDate>
+        <guid>http://blog.miz.space/research/2017/08/14/wikipedia-collective-memory-dynamic-graph-analysis-graphx-spark-scala-time-series-network/</guid>
+        <link>http://blog.miz.space/research/2017/08/14/wikipedia-collective-memory-dynamic-graph-analysis-graphx-spark-scala-time-series-network/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/collective-memory_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Wikipedia can tell us more than is written on its pages. ...  In the paper we proposed a new method for patterns detection in large-scale dynamic graphs. We applied the method to the Wikipedia datasets. We have managed to detect dynamical patterns in terms of events and collective memories in Wikipedia using the combination of the hyperlinks graph and the visitor activity on the website.&quot; - by &lt;a href=&quot;https://twitter.com/mizvladimir&quot;&gt;Volodymyr Miz&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/kikohs&quot;&gt;Kirell Benzi&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/GBR_data&quot;&gt;Benjamin Ricaud&lt;/a&gt;, and &lt;a href=&quot;https://people.epfl.ch/pierre.vandergheynst&quot;&gt;Pierre Vandergheynst&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/mizvol/WikiBrain&quot;&gt;WikiBrain on github&lt;/a&gt; and &lt;a href=&quot;https://github.com/kikohs/wiki&quot;&gt;pre-processing code on Github&lt;/a&gt; (note -- code is pending publication) &lt;/p&gt;
+        </description>
+      </item>
       
       <item>
         <title>Lifemap</title>

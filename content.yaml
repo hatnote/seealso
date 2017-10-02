@@ -7,6 +7,24 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: Wikipedia graph mining for collective memories
+url: http://blog.miz.space/research/2017/08/14/wikipedia-collective-memory-dynamic-graph-analysis-graphx-spark-scala-time-series-network/
+year: 2017
+date_added: 2017-10-01
+image: viz/collective-memory_sm.png
+description: >-
+
+    "Wikipedia can tell us more than is written on its pages. ...  In
+    the paper we proposed a new method for patterns detection in
+    large-scale dynamic graphs. We applied the method to the Wikipedia
+    datasets. We have managed to detect dynamical patterns in terms of
+    events and collective memories in Wikipedia using the combination
+    of the hyperlinks graph and the visitor activity on the website."
+
+authors: <a href="https://twitter.com/mizvladimir">Volodymyr Miz</a>, <a href="https://twitter.com/kikohs">Kirell Benzi</a>, <a href="https://twitter.com/GBR_data">Benjamin Ricaud</a>, and <a href="https://people.epfl.ch/pierre.vandergheynst">Pierre Vandergheynst</a>
+data: Wikipedia
+code: <a href="https://github.com/mizvol/WikiBrain">WikiBrain on github</a> and <a href="https://github.com/kikohs/wiki">pre-processing code on Github</a> (note -- code is pending publication)
+---
 title: Lifemap
 url: http://lifemap.univ-lyon1.fr/explore.html
 year: 2016

@@ -8,10 +8,75 @@
       <generator>Hatnote See also 0.1</generator>
       <language>en</language>
       <copyright></copyright>
-      <lastBuildDate>Sun, 01 Oct 2017 23:55:09 -0000</lastBuildDate>
+      <lastBuildDate>Mon, 15 Jul 2019 06:27:08 -0000</lastBuildDate>
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
+      
+      <item>
+        <title>A People Map of the US</title>
+        <pubDate>Sun, 14 Jul 2019 07:00:00 -0000</pubDate>
+        <guid>https://pudding.cool/2019/05/people-map/</guid>
+        <link>https://pudding.cool/2019/05/people-map/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/people-map_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;A People Map of the US, where city names are replaced by their most Wikipedia’ed resident: people born in, lived in, or connected to a place.&quot; - by &lt;a href=&quot;https://pudding.cool/author/matt-daniels/&quot;&gt;Matt Daniels&lt;/a&gt; and &lt;a href=&quot;https://pudding.cool/author/russell-goldenberg/&quot;&gt;Russell Goldenberg&lt;/a&gt; at The Pudding&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/the-pudding/people-map&quot;&gt;available on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Wiki Atlas</title>
+        <pubDate>Sun, 14 Jul 2019 07:00:00 -0000</pubDate>
+        <guid>https://wiki-atlas.org/</guid>
+        <link>https://wiki-atlas.org/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wiki-atlas_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;The tool renders Wikipedia content in a 3-dimensional, web-based cartographic environment. The map acts as a medium that enables the discovery and exploration of articles in a manner that explicitly associates geography and information.&quot; - by A. Noulas (NYU), D. Saez (WMF)&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Life After Death on Wikipedia</title>
+        <pubDate>Sun, 14 Jul 2019 07:00:00 -0000</pubDate>
+        <guid>https://pudding.cool/2018/08/wiki-death/</guid>
+        <link>https://pudding.cool/2018/08/wiki-death/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/wiki-death_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;While not perfect, Wikipedia traffic serves as a solid proxy for the ebb and flow of a celebrity’s cultural relevance.&quot; - by &lt;a href=&quot;https://pudding.cool/author/russell-goldenberg/&quot;&gt;Russell Goldenberg&lt;/a&gt; at The Pudding&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://github.com/the-pudding/wiki-death-data/&quot;&gt;available on github&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>NYC Wikipedia Articles</title>
+        <pubDate>Sun, 14 Jul 2019 07:00:00 -0000</pubDate>
+        <guid>http://nycwikipedia.katiehempenius.com/</guid>
+        <link>http://nycwikipedia.katiehempenius.com/</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/nyc-wikipedia_sm.png&quot;&gt;
+          &lt;p&gt;
+A map of Wikipedia articles about New York City. - by &lt;a href=&quot;https://twitter.com/katiehempenius&quot;&gt;Katie Hempenius&lt;/a&gt;&lt;/p&gt;
+	  &lt;p&gt;Code:  none&lt;/p&gt;
+        </description>
+      </item>
+      
+      <item>
+        <title>Encartopedia</title>
+        <pubDate>Sun, 14 Jul 2019 07:00:00 -0000</pubDate>
+        <guid>http://encartopedia.fastforwardlabs.com</guid>
+        <link>http://encartopedia.fastforwardlabs.com</link>
+        <description>
+	  &lt;img src=&quot;http://seealso.org/viz/encartopedia_sm.png&quot;&gt;
+          &lt;p&gt;
+&quot;Encartopedia helps locate yourself, or to be more precise, locate the subject matter of your curiosity within the universe of Wikipedia articles.&quot; - by &lt;a href=&quot;http://sepans.com/sp/&quot;&gt;sepans&lt;/a&gt; at FastFoard Labs&lt;/p&gt;
+	  &lt;p&gt;Code: &lt;a href=&quot;https://blog.fastforwardlabs.com/2017/08/15/encartopedia.html&quot;&gt;background blog post&lt;/a&gt;. &lt;/p&gt;
+        </description>
+      </item>
       
       <item>
         <title>Wikipedia graph mining for collective memories</title>

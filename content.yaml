@@ -7,6 +7,76 @@ page_subtitle: >
 ---
  # Each visualization should include a title, url, image, and description
 ---
+title: A People Map of the US
+url: https://pudding.cool/2019/05/people-map/
+year: 2019
+date_added: 2019-07-14
+image: viz/people-map_sm.png
+description: >-
+
+    "A People Map of the US, where city names are replaced by their most
+    Wikipedia’ed resident: people born in, lived in, or connected to a place."
+
+authors: <a href="https://pudding.cool/author/matt-daniels/">Matt Daniels</a> and <a href="https://pudding.cool/author/russell-goldenberg/">Russell Goldenberg</a> at The Pudding
+data: Wikipedia
+code: <a href="https://github.com/the-pudding/people-map">available on github</a>.
+---
+title: Wiki Atlas
+url: https://wiki-atlas.org/
+year: 2019
+date_added: 2019-07-14
+image: viz/wiki-atlas_sm.png
+description: >-
+
+    "The tool renders Wikipedia content in a 3-dimensional, web-based
+    cartographic environment. The map acts as a medium that enables the
+    discovery and exploration of articles in a manner that explicitly associates
+    geography and information."
+
+authors: A. Noulas (NYU), D. Saez (WMF)
+data: Wikipedia
+---
+title: Life After Death on Wikipedia
+url: https://pudding.cool/2018/08/wiki-death/
+year: 2018
+date_added: 2019-07-14
+image: viz/wiki-death_sm.png
+description: >-
+
+    "While not perfect, Wikipedia traffic serves as a solid proxy for the ebb
+    and flow of a celebrity’s cultural relevance."
+
+authors: <a href="https://pudding.cool/author/russell-goldenberg/">Russell Goldenberg</a> at The Pudding
+data: Wikipedia
+code: <a href="https://github.com/the-pudding/wiki-death-data/">available on github</a>.
+---
+title: NYC Wikipedia Articles
+url: http://nycwikipedia.katiehempenius.com/
+year: 2018
+date_added: 2019-07-14
+image: viz/nyc-wikipedia_sm.png
+description: >-
+
+    A map of Wikipedia articles about New York City.
+
+authors: <a href="https://twitter.com/katiehempenius">Katie Hempenius</a>
+data: Wikipedia
+---
+title: Encartopedia
+url: http://encartopedia.fastforwardlabs.com
+year: 2017
+date_added: 2019-07-14
+image: viz/encartopedia_sm.png
+description: >-
+
+    "Encartopedia helps locate yourself, or to be more precise, locate the
+    subject matter of your curiosity within the universe of Wikipedia
+    articles."
+
+authors: <a href="http://sepans.com/sp/">sepans</a> at FastFoard Labs
+data: Wikipedia
+code: <a href="https://blog.fastforwardlabs.com/2017/08/15/encartopedia.html">background blog post</a>.
+---
 title: Wikipedia graph mining for collective memories
 url: http://blog.miz.space/research/2017/08/14/wikipedia-collective-memory-dynamic-graph-analysis-graphx-spark-scala-time-series-network/
 year: 2017
